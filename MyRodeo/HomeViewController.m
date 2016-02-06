@@ -29,6 +29,8 @@
     return self;
 }
 
+
+//autorotate method
 - (BOOL)shouldAutorotate
 {
     return YES;
