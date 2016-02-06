@@ -1,0 +1,1051 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B1336151ADBAF690012E0F2 /* Rodeo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4B1336141ADBAF690012E0F2 /* Rodeo.sqlite */; };
+		4B1336161ADBAF690012E0F2 /* Rodeo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4B1336141ADBAF690012E0F2 /* Rodeo.sqlite */; };
+		4B1336211ADBB05E0012E0F2 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13361F1ADBB05E0012E0F2 /* HelpViewController.m */; };
+		4B1336221ADBB05E0012E0F2 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13361F1ADBB05E0012E0F2 /* HelpViewController.m */; };
+		4B1336231ADBB05E0012E0F2 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1336201ADBB05E0012E0F2 /* HelpViewController.xib */; };
+		4B1336241ADBB05E0012E0F2 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1336201ADBB05E0012E0F2 /* HelpViewController.xib */; };
+		4B1DEE7F18693C6300E84AA7 /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1DEE7E18693C6300E84AA7 /* navbar.png */; };
+		4B1DEE8118693FE700E84AA7 /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1DEE8018693FE700E84AA7 /* buttonbg.png */; };
+		4B1DEE851869498200E84AA7 /* CreateRodeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1DEE831869498200E84AA7 /* CreateRodeoViewController.m */; };
+		4B1DEE861869498200E84AA7 /* CreateRodeoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1DEE841869498200E84AA7 /* CreateRodeoViewController.xib */; };
+		4B1DEE8A186969AD00E84AA7 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1DEE88186969AD00E84AA7 /* EventsViewController.m */; };
+		4B1DEE8B186969AD00E84AA7 /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1DEE89186969AD00E84AA7 /* EventsViewController.xib */; };
+		4B1DEE8D18696D6F00E84AA7 /* scroll_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1DEE8C18696D6F00E84AA7 /* scroll_bg.png */; };
+		4B1DEE901869740F00E84AA7 /* EventVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1DEE8F1869740F00E84AA7 /* EventVO.m */; };
+		4B1DEE94186983F200E84AA7 /* donedown.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1DEE92186983F200E84AA7 /* donedown.png */; };
+		4B1DEE95186983F200E84AA7 /* doneup.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1DEE93186983F200E84AA7 /* doneup.png */; };
+		4B1DEE971869DF2A00E84AA7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1DEE961869DF2A00E84AA7 /* icon.png */; };
+		4B1EB5BA1874188C00669350 /* PickLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1EB5B81874188C00669350 /* PickLocationViewController.m */; };
+		4B1EB5BB1874188C00669350 /* PickLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1EB5B91874188C00669350 /* PickLocationViewController.xib */; };
+		4B1EB5BD187418D500669350 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1EB5BC187418D500669350 /* MapKit.framework */; };
+		4B1EB5BF18741B8100669350 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1EB5BE18741B8100669350 /* CoreLocation.framework */; };
+		4B1EB5C118741EEC00669350 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1EB5C018741EEC00669350 /* location.png */; };
+		4B1EB5C31874606B00669350 /* PickLocationViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1EB5C21874606B00669350 /* PickLocationViewController_iPad.xib */; };
+		4B2246DE186333A00084F8B9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2246DC186333A00084F8B9 /* HomeViewController.m */; };
+		4B2246DF186333A00084F8B9 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B2246DD186333A00084F8B9 /* HomeViewController.xib */; };
+		4B2246E218633BD60084F8B9 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2246E118633BD60084F8B9 /* bg.png */; };
+		4B23B9DD186C104B00719692 /* cellbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B23B9DC186C104B00719692 /* cellbg.png */; };
+		4B23D8B81890E15B00A15163 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B23D8B71890E15B00A15163 /* icon@2x.png */; };
+		4B23D8BB1890E76800A15163 /* Segoe Print.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B23D8BA1890E76800A15163 /* Segoe Print.ttf */; };
+		4B267B101872980E0004FCB4 /* CreateRodeoViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B267B0F1872980E0004FCB4 /* CreateRodeoViewController_iPad.xib */; };
+		4B267B1218729B4F0004FCB4 /* EventsViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B267B1118729B4F0004FCB4 /* EventsViewController_iPad.xib */; };
+		4B267B141872A0C20004FCB4 /* EventDetailsViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B267B131872A0C20004FCB4 /* EventDetailsViewController_iPad.xib */; };
+		4B2877D51887A79D002C832D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B2877D31887A79D002C832D /* Main_iPad.storyboard */; };
+		4B2877D61887A79D002C832D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B2877D41887A79D002C832D /* Main_iPhone.storyboard */; };
+		4B2877D81887C79C002C832D /* innerbg_.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2877D71887C79C002C832D /* innerbg_.png */; };
+		4B3042061862B02800154BE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3042051862B02800154BE3 /* Foundation.framework */; };
+		4B3042081862B02800154BE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3042071862B02800154BE3 /* CoreGraphics.framework */; };
+		4B30420A1862B02800154BE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3042091862B02800154BE3 /* UIKit.framework */; };
+		4B3042101862B02900154BE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B30420E1862B02900154BE3 /* InfoPlist.strings */; };
+		4B3042121862B02900154BE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3042111862B02900154BE3 /* main.m */; };
+		4B3042161862B02900154BE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3042151862B02900154BE3 /* AppDelegate.m */; };
+		4B30421C1862B02900154BE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B30421B1862B02900154BE3 /* ViewController.m */; };
+		4B30421E1862B02900154BE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B30421D1862B02900154BE3 /* Images.xcassets */; };
+		4B3042251862B02900154BE3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3042241862B02900154BE3 /* XCTest.framework */; };
+		4B3042261862B02900154BE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3042051862B02800154BE3 /* Foundation.framework */; };
+		4B3042271862B02900154BE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3042091862B02800154BE3 /* UIKit.framework */; };
+		4B30422F1862B02900154BE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B30422D1862B02900154BE3 /* InfoPlist.strings */; };
+		4B3042311862B02900154BE3 /* MyRodeoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3042301862B02900154BE3 /* MyRodeoTests.m */; };
+		4B31B7211871567400EAB0CA /* HomeViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B31B7201871567400EAB0CA /* HomeViewController_iPad.xib */; };
+		4B33258F1885859300B249F4 /* innerbg_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B33258E1885859300B249F4 /* innerbg_landscape.png */; };
+		4B3325941885AE2D00B249F4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B3325931885AE2D00B249F4 /* Default.png */; };
+		4B3A31CE18A67F6500E8858F /* donebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B3A31CD18A67F6500E8858F /* donebtn.png */; };
+		4B41A38518DEBE69004A3147 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B41A38418DEBE69004A3147 /* libsqlite3.dylib */; };
+		4B41A38A18DEBFAD004A3147 /* Rodeo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B41A38918DEBFAD004A3147 /* Rodeo.m */; };
+		4B43E1301933295F00C65CE1 /* EventDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B43E12F1933295F00C65CE1 /* EventDetailsViewController.xib */; };
+		4B43E1321933296D00C65CE1 /* EventsLookUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B43E1311933296D00C65CE1 /* EventsLookUpViewController.xib */; };
+		4B43E1341933297C00C65CE1 /* RodeoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B43E1331933297C00C65CE1 /* RodeoListViewController.xib */; };
+		4B44F2301923BC8400FE95BC /* ContestantVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B44F22F1923BC8400FE95BC /* ContestantVO.m */; };
+		4B4B4623186D993000AB739B /* GettingStartedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B4621186D993000AB739B /* GettingStartedViewController.m */; };
+		4B4B4624186D993000AB739B /* GettingStartedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B4B4622186D993000AB739B /* GettingStartedViewController.xib */; };
+		4B4B4628186D99E700AB739B /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B4626186D99E700AB739B /* AboutViewController.m */; };
+		4B4B4629186D99E700AB739B /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B4B4627186D99E700AB739B /* AboutViewController.xib */; };
+		4B4D829C186D4F79003868CD /* EventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D829A186D4F79003868CD /* EventDetailsViewController.m */; };
+		4B4D829F186D60B6003868CD /* bg_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4D829E186D60B6003868CD /* bg_landscape.png */; };
+		4B529AF3186B556D0062535B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B529AF2186B556D0062535B /* Default-568h@2x.png */; };
+		4B529AF7186B57A80062535B /* RodeoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B529AF5186B57A80062535B /* RodeoListViewController.m */; };
+		4B529AFC186B5B150062535B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B529AFA186B5B150062535B /* SettingsViewController.m */; };
+		4B529AFD186B5B150062535B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B529AFB186B5B150062535B /* SettingsViewController.xib */; };
+		4B529B01186B63700062535B /* SearchRodeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B529AFF186B63700062535B /* SearchRodeoViewController.m */; };
+		4B529B02186B63700062535B /* SearchRodeoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B529B00186B63700062535B /* SearchRodeoViewController.xib */; };
+		4B5B30AE187EDE6F007815B3 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B30AC187EDE6F007815B3 /* MainNavigationController.m */; };
+		4B5B30AF187EDE6F007815B3 /* MainNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B30AD187EDE6F007815B3 /* MainNavigationController.xib */; };
+		4B632E19195DE5D400464B0C /* rodeolist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B632E18195DE5D400464B0C /* rodeolist.plist */; };
+		4B63B7FE18850DBC00F60CCE /* bg_.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B63B7FD18850DBC00F60CCE /* bg_.png */; };
+		4B6834E61AD9944F0051BF9D /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6834E51AD9944F0051BF9D /* CustomIOS7AlertView.m */; };
+		4B70BA10187AEABB00F3A820 /* createrodeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B70BA0E187AEABB00F3A820 /* createrodeo.png */; };
+		4B70BA11187AEABB00F3A820 /* lookuparodeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B70BA0F187AEABB00F3A820 /* lookuparodeo.png */; };
+		4B70BA13187AEB7000F3A820 /* gettingstarted.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B70BA12187AEB7000F3A820 /* gettingstarted.png */; };
+		4B70BA15187AEBC700F3A820 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B70BA14187AEBC700F3A820 /* settings.png */; };
+		4B70BA17187AEC3800F3A820 /* aboutmyrodeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B70BA16187AEC3800F3A820 /* aboutmyrodeo.png */; };
+		4B70BA19187AEC6C00F3A820 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B70BA18187AEC6C00F3A820 /* help.png */; };
+		4B71C58D1920CEC0006CB693 /* EventsLookUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B71C58B1920CEC0006CB693 /* EventsLookUpViewController.m */; };
+		4B7403781ADA946700251CAD /* EventsLookUpViewController_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B7403771ADA946700251CAD /* EventsLookUpViewController_ipad.xib */; };
+		4B8030EC188541E6002705F8 /* innerbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8030EB188541E6002705F8 /* innerbg.png */; };
+		4B8030EE188542E6002705F8 /* navigationbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8030ED188542E6002705F8 /* navigationbar.png */; };
+		4B8030F018854B36002705F8 /* backbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8030EF18854B36002705F8 /* backbtn.png */; };
+		4B8030F218854F40002705F8 /* cellcontentsbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8030F118854F40002705F8 /* cellcontentsbg.png */; };
+		4B8030F41885507A002705F8 /* cellcontentsbg_short.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8030F31885507A002705F8 /* cellcontentsbg_short.png */; };
+		4B8030F618855D8D002705F8 /* cellbg_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B8030F518855D8D002705F8 /* cellbg_selected.png */; };
+		4BB6F5A81ADABC3B001D66DC /* GettingStarted_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB6F5A71ADABC3B001D66DC /* GettingStarted_ipad.xib */; };
+		4BB6F5AA1ADABD10001D66DC /* AboutRodeo_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB6F5A91ADABD10001D66DC /* AboutRodeo_ipad.xib */; };
+		4BB6F5B11ADABF1B001D66DC /* HelpRodeo_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB6F5B01ADABF1B001D66DC /* HelpRodeo_ipad.xib */; };
+		4BDA98B618DE388A003E8414 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA98B518DE388A003E8414 /* CFNetwork.framework */; };
+		4BE75C3D1882FAEE00490E4A /* btn_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE75C3C1882FAEE00490E4A /* btn_bg.png */; };
+		4BE75C3F1882FBB400490E4A /* logotext.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE75C3E1882FBB400490E4A /* logotext.png */; };
+		4BE75C46188318E500490E4A /* BrushScriptStd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BE75C44188318E500490E4A /* BrushScriptStd.ttf */; };
+		4BE75C47188318E500490E4A /* Lato-Bla.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BE75C45188318E500490E4A /* Lato-Bla.ttf */; };
+		A41F35E81C477A860029D1A6 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A41F35E01C477A860029D1A6 /* UIDevice-Hardware.m */; };
+		A41F35F11C477F310029D1A6 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A41F35E01C477A860029D1A6 /* UIDevice-Hardware.m */; };
+		A41F36011C478EF20029D1A6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F51C478EF10029D1A6 /* Default-568h@2x.png */; };
+		A41F36021C478EF20029D1A6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F51C478EF10029D1A6 /* Default-568h@2x.png */; };
+		A41F36031C478EF20029D1A6 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F61C478EF10029D1A6 /* Default-667h@2x.png */; };
+		A41F36041C478EF20029D1A6 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F61C478EF10029D1A6 /* Default-667h@2x.png */; };
+		A41F36051C478EF20029D1A6 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F71C478EF10029D1A6 /* Default-736h@3x.png */; };
+		A41F36061C478EF20029D1A6 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F71C478EF10029D1A6 /* Default-736h@3x.png */; };
+		A41F36071C478EF20029D1A6 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F81C478EF10029D1A6 /* Default-Landscape.png */; };
+		A41F36081C478EF20029D1A6 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F81C478EF10029D1A6 /* Default-Landscape.png */; };
+		A41F36091C478EF20029D1A6 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F91C478EF10029D1A6 /* Default-Landscape@2x.png */; };
+		A41F360A1C478EF20029D1A6 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35F91C478EF10029D1A6 /* Default-Landscape@2x.png */; };
+		A41F360B1C478EF20029D1A6 /* Default-Landscape@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FA1C478EF10029D1A6 /* Default-Landscape@3x.png */; };
+		A41F360C1C478EF20029D1A6 /* Default-Landscape@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FA1C478EF10029D1A6 /* Default-Landscape@3x.png */; };
+		A41F360D1C478EF20029D1A6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FB1C478EF10029D1A6 /* Default.png */; };
+		A41F360E1C478EF20029D1A6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FB1C478EF10029D1A6 /* Default.png */; };
+		A41F360F1C478EF20029D1A6 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FC1C478EF10029D1A6 /* Default~iphone.png */; };
+		A41F36101C478EF20029D1A6 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FC1C478EF10029D1A6 /* Default~iphone.png */; };
+		A41F36111C478EF20029D1A6 /* Default~Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FD1C478EF10029D1A6 /* Default~Landscape@2x.png */; };
+		A41F36121C478EF20029D1A6 /* Default~Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FD1C478EF10029D1A6 /* Default~Landscape@2x.png */; };
+		A41F36131C478EF20029D1A6 /* Default768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FE1C478EF10029D1A6 /* Default768x1024.png */; };
+		A41F36141C478EF20029D1A6 /* Default768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FE1C478EF10029D1A6 /* Default768x1024.png */; };
+		A41F36151C478EF20029D1A6 /* Default1536x2048@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FF1C478EF10029D1A6 /* Default1536x2048@2x.png */; };
+		A41F36161C478EF20029D1A6 /* Default1536x2048@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F35FF1C478EF10029D1A6 /* Default1536x2048@2x.png */; };
+		A41F36171C478EF20029D1A6 /* Defaults-1136h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F36001C478EF20029D1A6 /* Defaults-1136h@2x.png */; };
+		A41F36181C478EF20029D1A6 /* Defaults-1136h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A41F36001C478EF20029D1A6 /* Defaults-1136h@2x.png */; };
+		A41F361A1C47A67A0029D1A6 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41F36191C47A67A0029D1A6 /* Images-2.xcassets */; };
+		A43507941C48C397004E9EEA /* innerbg6.png in Resources */ = {isa = PBXBuildFile; fileRef = A43507931C48C397004E9EEA /* innerbg6.png */; };
+		A43507961C48C44E004E9EEA /* innerbg375.png in Resources */ = {isa = PBXBuildFile; fileRef = A43507951C48C44E004E9EEA /* innerbg375.png */; };
+		A43507981C48C4CE004E9EEA /* bg375.png in Resources */ = {isa = PBXBuildFile; fileRef = A43507971C48C4CE004E9EEA /* bg375.png */; };
+		A4A81C251C0D75CD00F30899 /* Segoe_UI_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A81C241C0D75CD00F30899 /* Segoe_UI_bold.ttf */; };
+		A4A81C261C0D75CD00F30899 /* Segoe_UI_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A81C241C0D75CD00F30899 /* Segoe_UI_bold.ttf */; };
+		A4B8A0E01C1E9D8E007E90A1 /* cell_shorimg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B8A0DF1C1E9D8E007E90A1 /* cell_shorimg.png */; };
+		A4EA98461C0D7D1F00135D66 /* segoeprb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4EA98451C0D7D1F00135D66 /* segoeprb.ttf */; };
+		A4EA98471C0D7D1F00135D66 /* segoeprb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4EA98451C0D7D1F00135D66 /* segoeprb.ttf */; };
+		A4EA98491C0D91F700135D66 /* ufonts.com_segoe-print-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4EA98481C0D91F700135D66 /* ufonts.com_segoe-print-bold.ttf */; };
+		A4EA984A1C0D91F700135D66 /* ufonts.com_segoe-print-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4EA98481C0D91F700135D66 /* ufonts.com_segoe-print-bold.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B3042281862B02900154BE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B3041FA1862B02800154BE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3042011862B02800154BE3;
+			remoteInfo = MyRodeo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B1336141ADBAF690012E0F2 /* Rodeo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rodeo.sqlite; sourceTree = "<group>"; };
+		4B13361E1ADBB05E0012E0F2 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		4B13361F1ADBB05E0012E0F2 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		4B1336201ADBB05E0012E0F2 /* HelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		4B1DEE7E18693C6300E84AA7 /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navbar.png; path = images/navbar.png; sourceTree = "<group>"; };
+		4B1DEE8018693FE700E84AA7 /* buttonbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonbg.png; path = images/buttonbg.png; sourceTree = "<group>"; };
+		4B1DEE821869498200E84AA7 /* CreateRodeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateRodeoViewController.h; sourceTree = "<group>"; };
+		4B1DEE831869498200E84AA7 /* CreateRodeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateRodeoViewController.m; sourceTree = "<group>"; };
+		4B1DEE841869498200E84AA7 /* CreateRodeoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateRodeoViewController.xib; sourceTree = "<group>"; };
+		4B1DEE87186969AD00E84AA7 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		4B1DEE88186969AD00E84AA7 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		4B1DEE89186969AD00E84AA7 /* EventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
+		4B1DEE8C18696D6F00E84AA7 /* scroll_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scroll_bg.png; path = images/scroll_bg.png; sourceTree = "<group>"; };
+		4B1DEE8E1869740F00E84AA7 /* EventVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventVO.h; sourceTree = "<group>"; };
+		4B1DEE8F1869740F00E84AA7 /* EventVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventVO.m; sourceTree = "<group>"; };
+		4B1DEE92186983F200E84AA7 /* donedown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = donedown.png; path = images/donedown.png; sourceTree = "<group>"; };
+		4B1DEE93186983F200E84AA7 /* doneup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doneup.png; path = images/doneup.png; sourceTree = "<group>"; };
+		4B1DEE961869DF2A00E84AA7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = images/icon.png; sourceTree = "<group>"; };
+		4B1EB5B71874188C00669350 /* PickLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickLocationViewController.h; sourceTree = "<group>"; };
+		4B1EB5B81874188C00669350 /* PickLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickLocationViewController.m; sourceTree = "<group>"; };
+		4B1EB5B91874188C00669350 /* PickLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickLocationViewController.xib; sourceTree = "<group>"; };
+		4B1EB5BC187418D500669350 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4B1EB5BE18741B8100669350 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4B1EB5C018741EEC00669350 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = location.png; path = images/location.png; sourceTree = "<group>"; };
+		4B1EB5C21874606B00669350 /* PickLocationViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickLocationViewController_iPad.xib; sourceTree = "<group>"; };
+		4B2246DB186333A00084F8B9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		4B2246DC186333A00084F8B9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		4B2246DD186333A00084F8B9 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4B2246E118633BD60084F8B9 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = images/bg.png; sourceTree = "<group>"; };
+		4B23B9DC186C104B00719692 /* cellbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellbg.png; path = images/cellbg.png; sourceTree = "<group>"; };
+		4B23D8B71890E15B00A15163 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "images/icon@2x.png"; sourceTree = "<group>"; };
+		4B23D8BA1890E76800A15163 /* Segoe Print.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Segoe Print.ttf"; path = "font/Segoe Print.ttf"; sourceTree = "<group>"; };
+		4B267B0F1872980E0004FCB4 /* CreateRodeoViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateRodeoViewController_iPad.xib; sourceTree = "<group>"; };
+		4B267B1118729B4F0004FCB4 /* EventsViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsViewController_iPad.xib; sourceTree = "<group>"; };
+		4B267B131872A0C20004FCB4 /* EventDetailsViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailsViewController_iPad.xib; sourceTree = "<group>"; };
+		4B2877D31887A79D002C832D /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		4B2877D41887A79D002C832D /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		4B2877D71887C79C002C832D /* innerbg_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innerbg_.png; path = images/innerbg_.png; sourceTree = "<group>"; };
+		4B3042021862B02800154BE3 /* MyRodeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRodeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3042051862B02800154BE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B3042071862B02800154BE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4B3042091862B02800154BE3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4B30420D1862B02800154BE3 /* MyRodeo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyRodeo-Info.plist"; sourceTree = "<group>"; };
+		4B30420F1862B02900154BE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B3042111862B02900154BE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B3042131862B02900154BE3 /* MyRodeo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyRodeo-Prefix.pch"; sourceTree = "<group>"; };
+		4B3042141862B02900154BE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4B3042151862B02900154BE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B30421A1862B02900154BE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4B30421B1862B02900154BE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4B30421D1862B02900154BE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4B3042231862B02900154BE3 /* MyRodeoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRodeoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3042241862B02900154BE3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4B30422C1862B02900154BE3 /* MyRodeoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyRodeoTests-Info.plist"; sourceTree = "<group>"; };
+		4B30422E1862B02900154BE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B3042301862B02900154BE3 /* MyRodeoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRodeoTests.m; sourceTree = "<group>"; };
+		4B31B7201871567400EAB0CA /* HomeViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController_iPad.xib; sourceTree = "<group>"; };
+		4B33258E1885859300B249F4 /* innerbg_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innerbg_landscape.png; path = images/innerbg_landscape.png; sourceTree = "<group>"; };
+		4B3325931885AE2D00B249F4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = images/Default.png; sourceTree = "<group>"; };
+		4B3A31CD18A67F6500E8858F /* donebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = donebtn.png; path = images/donebtn.png; sourceTree = "<group>"; };
+		4B41A38418DEBE69004A3147 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4B41A38818DEBFAD004A3147 /* Rodeo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rodeo.h; sourceTree = "<group>"; };
+		4B41A38918DEBFAD004A3147 /* Rodeo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rodeo.m; sourceTree = "<group>"; };
+		4B43E12F1933295F00C65CE1 /* EventDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailsViewController.xib; sourceTree = "<group>"; };
+		4B43E1311933296D00C65CE1 /* EventsLookUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsLookUpViewController.xib; sourceTree = "<group>"; };
+		4B43E1331933297C00C65CE1 /* RodeoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RodeoListViewController.xib; sourceTree = "<group>"; };
+		4B44F22E1923BC8400FE95BC /* ContestantVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestantVO.h; sourceTree = "<group>"; };
+		4B44F22F1923BC8400FE95BC /* ContestantVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestantVO.m; sourceTree = "<group>"; };
+		4B4B4620186D993000AB739B /* GettingStartedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GettingStartedViewController.h; sourceTree = "<group>"; };
+		4B4B4621186D993000AB739B /* GettingStartedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GettingStartedViewController.m; sourceTree = "<group>"; };
+		4B4B4622186D993000AB739B /* GettingStartedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GettingStartedViewController.xib; sourceTree = "<group>"; };
+		4B4B4625186D99E700AB739B /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		4B4B4626186D99E700AB739B /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		4B4B4627186D99E700AB739B /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		4B4D8299186D4F79003868CD /* EventDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailsViewController.h; sourceTree = "<group>"; };
+		4B4D829A186D4F79003868CD /* EventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailsViewController.m; sourceTree = "<group>"; };
+		4B4D829E186D60B6003868CD /* bg_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_landscape.png; path = images/bg_landscape.png; sourceTree = "<group>"; };
+		4B529AF2186B556D0062535B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "images/Default-568h@2x.png"; sourceTree = "<group>"; };
+		4B529AF4186B57A80062535B /* RodeoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RodeoListViewController.h; sourceTree = "<group>"; };
+		4B529AF5186B57A80062535B /* RodeoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RodeoListViewController.m; sourceTree = "<group>"; };
+		4B529AF9186B5B150062535B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		4B529AFA186B5B150062535B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		4B529AFB186B5B150062535B /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		4B529AFE186B63700062535B /* SearchRodeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRodeoViewController.h; sourceTree = "<group>"; };
+		4B529AFF186B63700062535B /* SearchRodeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRodeoViewController.m; sourceTree = "<group>"; };
+		4B529B00186B63700062535B /* SearchRodeoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchRodeoViewController.xib; sourceTree = "<group>"; };
+		4B5B30AB187EDE6F007815B3 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		4B5B30AC187EDE6F007815B3 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		4B5B30AD187EDE6F007815B3 /* MainNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainNavigationController.xib; sourceTree = "<group>"; };
+		4B632E18195DE5D400464B0C /* rodeolist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rodeolist.plist; sourceTree = "<group>"; };
+		4B63B7FD18850DBC00F60CCE /* bg_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_.png; path = images/bg_.png; sourceTree = "<group>"; };
+		4B6834E41AD9944F0051BF9D /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		4B6834E51AD9944F0051BF9D /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		4B70BA0E187AEABB00F3A820 /* createrodeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = createrodeo.png; path = images/createrodeo.png; sourceTree = "<group>"; };
+		4B70BA0F187AEABB00F3A820 /* lookuparodeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lookuparodeo.png; path = images/lookuparodeo.png; sourceTree = "<group>"; };
+		4B70BA12187AEB7000F3A820 /* gettingstarted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gettingstarted.png; path = images/gettingstarted.png; sourceTree = "<group>"; };
+		4B70BA14187AEBC700F3A820 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = images/settings.png; sourceTree = "<group>"; };
+		4B70BA16187AEC3800F3A820 /* aboutmyrodeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aboutmyrodeo.png; path = images/aboutmyrodeo.png; sourceTree = "<group>"; };
+		4B70BA18187AEC6C00F3A820 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = help.png; path = images/help.png; sourceTree = "<group>"; };
+		4B71C58A1920CEC0006CB693 /* EventsLookUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsLookUpViewController.h; sourceTree = "<group>"; };
+		4B71C58B1920CEC0006CB693 /* EventsLookUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsLookUpViewController.m; sourceTree = "<group>"; };
+		4B7403771ADA946700251CAD /* EventsLookUpViewController_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsLookUpViewController_ipad.xib; sourceTree = "<group>"; };
+		4B8030EB188541E6002705F8 /* innerbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innerbg.png; path = images/innerbg.png; sourceTree = "<group>"; };
+		4B8030ED188542E6002705F8 /* navigationbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navigationbar.png; path = images/navigationbar.png; sourceTree = "<group>"; };
+		4B8030EF18854B36002705F8 /* backbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backbtn.png; path = images/backbtn.png; sourceTree = "<group>"; };
+		4B8030F118854F40002705F8 /* cellcontentsbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellcontentsbg.png; path = images/cellcontentsbg.png; sourceTree = "<group>"; };
+		4B8030F31885507A002705F8 /* cellcontentsbg_short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellcontentsbg_short.png; path = images/cellcontentsbg_short.png; sourceTree = "<group>"; };
+		4B8030F518855D8D002705F8 /* cellbg_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellbg_selected.png; path = images/cellbg_selected.png; sourceTree = "<group>"; };
+		4BB6F5A71ADABC3B001D66DC /* GettingStarted_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GettingStarted_ipad.xib; sourceTree = "<group>"; };
+		4BB6F5A91ADABD10001D66DC /* AboutRodeo_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutRodeo_ipad.xib; sourceTree = "<group>"; };
+		4BB6F5B01ADABF1B001D66DC /* HelpRodeo_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpRodeo_ipad.xib; sourceTree = "<group>"; };
+		4BDA98B518DE388A003E8414 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4BE75C3C1882FAEE00490E4A /* btn_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_bg.png; path = images/btn_bg.png; sourceTree = "<group>"; };
+		4BE75C3E1882FBB400490E4A /* logotext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logotext.png; path = images/logotext.png; sourceTree = "<group>"; };
+		4BE75C44188318E500490E4A /* BrushScriptStd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BrushScriptStd.ttf; path = font/BrushScriptStd.ttf; sourceTree = "<group>"; };
+		4BE75C45188318E500490E4A /* Lato-Bla.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bla.ttf"; path = "font/Lato-Bla.ttf"; sourceTree = "<group>"; };
+		A41F35DF1C477A860029D1A6 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-Hardware.h"; path = "oriantion/UIDevice-Hardware.h"; sourceTree = "<group>"; };
+		A41F35E01C477A860029D1A6 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-Hardware.m"; path = "oriantion/UIDevice-Hardware.m"; sourceTree = "<group>"; };
+		A41F35F51C478EF10029D1A6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "images/Default-568h@2x.png"; sourceTree = "<group>"; };
+		A41F35F61C478EF10029D1A6 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-667h@2x.png"; path = "images/Default-667h@2x.png"; sourceTree = "<group>"; };
+		A41F35F71C478EF10029D1A6 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-736h@3x.png"; path = "images/Default-736h@3x.png"; sourceTree = "<group>"; };
+		A41F35F81C478EF10029D1A6 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "images/Default-Landscape.png"; sourceTree = "<group>"; };
+		A41F35F91C478EF10029D1A6 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x.png"; path = "images/Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		A41F35FA1C478EF10029D1A6 /* Default-Landscape@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@3x.png"; path = "images/Default-Landscape@3x.png"; sourceTree = "<group>"; };
+		A41F35FB1C478EF10029D1A6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = images/Default.png; sourceTree = "<group>"; };
+		A41F35FC1C478EF10029D1A6 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "images/Default~iphone.png"; sourceTree = "<group>"; };
+		A41F35FD1C478EF10029D1A6 /* Default~Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~Landscape@2x.png"; path = "images/Default~Landscape@2x.png"; sourceTree = "<group>"; };
+		A41F35FE1C478EF10029D1A6 /* Default768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default768x1024.png; path = images/Default768x1024.png; sourceTree = "<group>"; };
+		A41F35FF1C478EF10029D1A6 /* Default1536x2048@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default1536x2048@2x.png"; path = "images/Default1536x2048@2x.png"; sourceTree = "<group>"; };
+		A41F36001C478EF20029D1A6 /* Defaults-1136h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Defaults-1136h@2x.png"; path = "images/Defaults-1136h@2x.png"; sourceTree = "<group>"; };
+		A41F36191C47A67A0029D1A6 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		A43507931C48C397004E9EEA /* innerbg6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innerbg6.png; path = images/innerbg6.png; sourceTree = "<group>"; };
+		A43507951C48C44E004E9EEA /* innerbg375.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innerbg375.png; path = images/innerbg375.png; sourceTree = "<group>"; };
+		A43507971C48C4CE004E9EEA /* bg375.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg375.png; path = images/bg375.png; sourceTree = "<group>"; };
+		A4A81C241C0D75CD00F30899 /* Segoe_UI_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Segoe_UI_bold.ttf; path = font/Segoe_UI_bold.ttf; sourceTree = "<group>"; };
+		A4B8A0DF1C1E9D8E007E90A1 /* cell_shorimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell_shorimg.png; path = images/cell_shorimg.png; sourceTree = "<group>"; };
+		A4EA98451C0D7D1F00135D66 /* segoeprb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = segoeprb.ttf; path = font/segoeprb.ttf; sourceTree = "<group>"; };
+		A4EA98481C0D91F700135D66 /* ufonts.com_segoe-print-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ufonts.com_segoe-print-bold.ttf"; path = "font/ufonts.com_segoe-print-bold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B3041FF1862B02800154BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B41A38518DEBE69004A3147 /* libsqlite3.dylib in Frameworks */,
+				4BDA98B618DE388A003E8414 /* CFNetwork.framework in Frameworks */,
+				4B1EB5BF18741B8100669350 /* CoreLocation.framework in Frameworks */,
+				4B1EB5BD187418D500669350 /* MapKit.framework in Frameworks */,
+				4B3042081862B02800154BE3 /* CoreGraphics.framework in Frameworks */,
+				4B30420A1862B02800154BE3 /* UIKit.framework in Frameworks */,
+				4B3042061862B02800154BE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3042201862B02900154BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3042251862B02900154BE3 /* XCTest.framework in Frameworks */,
+				4B3042271862B02900154BE3 /* UIKit.framework in Frameworks */,
+				4B3042261862B02900154BE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B1DEE911869741A00E84AA7 /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				4B1DEE8E1869740F00E84AA7 /* EventVO.h */,
+				4B1DEE8F1869740F00E84AA7 /* EventVO.m */,
+				4B41A38818DEBFAD004A3147 /* Rodeo.h */,
+				4B41A38918DEBFAD004A3147 /* Rodeo.m */,
+				4B44F22E1923BC8400FE95BC /* ContestantVO.h */,
+				4B44F22F1923BC8400FE95BC /* ContestantVO.m */,
+			);
+			name = VO;
+			sourceTree = "<group>";
+		};
+		4B2246E018633BB60084F8B9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A43507971C48C4CE004E9EEA /* bg375.png */,
+				A43507951C48C44E004E9EEA /* innerbg375.png */,
+				A43507931C48C397004E9EEA /* innerbg6.png */,
+				A41F35F51C478EF10029D1A6 /* Default-568h@2x.png */,
+				A41F35F61C478EF10029D1A6 /* Default-667h@2x.png */,
+				A41F35F71C478EF10029D1A6 /* Default-736h@3x.png */,
+				A41F35F81C478EF10029D1A6 /* Default-Landscape.png */,
+				A41F35F91C478EF10029D1A6 /* Default-Landscape@2x.png */,
+				A41F35FA1C478EF10029D1A6 /* Default-Landscape@3x.png */,
+				A41F35FB1C478EF10029D1A6 /* Default.png */,
+				A41F35FC1C478EF10029D1A6 /* Default~iphone.png */,
+				A41F35FD1C478EF10029D1A6 /* Default~Landscape@2x.png */,
+				A41F35FE1C478EF10029D1A6 /* Default768x1024.png */,
+				A41F35FF1C478EF10029D1A6 /* Default1536x2048@2x.png */,
+				A41F36001C478EF20029D1A6 /* Defaults-1136h@2x.png */,
+				A4B8A0DF1C1E9D8E007E90A1 /* cell_shorimg.png */,
+				4B3A31CD18A67F6500E8858F /* donebtn.png */,
+				4B2877D71887C79C002C832D /* innerbg_.png */,
+				4B3325931885AE2D00B249F4 /* Default.png */,
+				4B33258E1885859300B249F4 /* innerbg_landscape.png */,
+				4B8030F518855D8D002705F8 /* cellbg_selected.png */,
+				4B8030F31885507A002705F8 /* cellcontentsbg_short.png */,
+				4B8030F118854F40002705F8 /* cellcontentsbg.png */,
+				4B23D8B71890E15B00A15163 /* icon@2x.png */,
+				4B8030EB188541E6002705F8 /* innerbg.png */,
+				4B8030ED188542E6002705F8 /* navigationbar.png */,
+				4B63B7FD18850DBC00F60CCE /* bg_.png */,
+				4B8030EF18854B36002705F8 /* backbtn.png */,
+				4BE75C3C1882FAEE00490E4A /* btn_bg.png */,
+				4B70BA14187AEBC700F3A820 /* settings.png */,
+				4B70BA0E187AEABB00F3A820 /* createrodeo.png */,
+				4B70BA0F187AEABB00F3A820 /* lookuparodeo.png */,
+				4B70BA12187AEB7000F3A820 /* gettingstarted.png */,
+				4BE75C3E1882FBB400490E4A /* logotext.png */,
+				4B1EB5C018741EEC00669350 /* location.png */,
+				4B4D829E186D60B6003868CD /* bg_landscape.png */,
+				4B70BA18187AEC6C00F3A820 /* help.png */,
+				4B23B9DC186C104B00719692 /* cellbg.png */,
+				4B70BA16187AEC3800F3A820 /* aboutmyrodeo.png */,
+				4B529AF2186B556D0062535B /* Default-568h@2x.png */,
+				4B1DEE961869DF2A00E84AA7 /* icon.png */,
+				4B1DEE92186983F200E84AA7 /* donedown.png */,
+				4B1DEE93186983F200E84AA7 /* doneup.png */,
+				4B1DEE8018693FE700E84AA7 /* buttonbg.png */,
+				4B1DEE7E18693C6300E84AA7 /* navbar.png */,
+				4B1DEE8C18696D6F00E84AA7 /* scroll_bg.png */,
+				4B2246E118633BD60084F8B9 /* bg.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		4B267B0E187296020004FCB4 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		4B3041F91862B02800154BE3 = {
+			isa = PBXGroup;
+			children = (
+				4B30420B1862B02800154BE3 /* MyRodeo */,
+				4B30422A1862B02900154BE3 /* MyRodeoTests */,
+				4B3042041862B02800154BE3 /* Frameworks */,
+				4B3042031862B02800154BE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B3042031862B02800154BE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B3042021862B02800154BE3 /* MyRodeo.app */,
+				4B3042231862B02900154BE3 /* MyRodeoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B3042041862B02800154BE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B41A38418DEBE69004A3147 /* libsqlite3.dylib */,
+				4BDA98B518DE388A003E8414 /* CFNetwork.framework */,
+				4B1EB5BE18741B8100669350 /* CoreLocation.framework */,
+				4B1EB5BC187418D500669350 /* MapKit.framework */,
+				4B3042051862B02800154BE3 /* Foundation.framework */,
+				4B3042071862B02800154BE3 /* CoreGraphics.framework */,
+				4B3042091862B02800154BE3 /* UIKit.framework */,
+				4B3042241862B02900154BE3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B30420B1862B02800154BE3 /* MyRodeo */ = {
+			isa = PBXGroup;
+			children = (
+				A41F35DC1C477A6C0029D1A6 /* orientation */,
+				4B13361E1ADBB05E0012E0F2 /* HelpViewController.h */,
+				4B13361F1ADBB05E0012E0F2 /* HelpViewController.m */,
+				4B1336201ADBB05E0012E0F2 /* HelpViewController.xib */,
+				4BB6F5B01ADABF1B001D66DC /* HelpRodeo_ipad.xib */,
+				4B1336141ADBAF690012E0F2 /* Rodeo.sqlite */,
+				4B6834E31AD9944F0051BF9D /* CustomAlertView */,
+				4B71C58A1920CEC0006CB693 /* EventsLookUpViewController.h */,
+				4B71C58B1920CEC0006CB693 /* EventsLookUpViewController.m */,
+				4B43E1311933296D00C65CE1 /* EventsLookUpViewController.xib */,
+				4B7403771ADA946700251CAD /* EventsLookUpViewController_ipad.xib */,
+				4B2877D31887A79D002C832D /* Main_iPad.storyboard */,
+				4B2877D41887A79D002C832D /* Main_iPhone.storyboard */,
+				4BE75C401882FD9E00490E4A /* font */,
+				4B267B0E187296020004FCB4 /* iPad */,
+				4B1DEE911869741A00E84AA7 /* VO */,
+				4B2246E018633BB60084F8B9 /* images */,
+				4B2246DB186333A00084F8B9 /* HomeViewController.h */,
+				4B2246DC186333A00084F8B9 /* HomeViewController.m */,
+				4B2246DD186333A00084F8B9 /* HomeViewController.xib */,
+				4B31B7201871567400EAB0CA /* HomeViewController_iPad.xib */,
+				4B3042141862B02900154BE3 /* AppDelegate.h */,
+				4B3042151862B02900154BE3 /* AppDelegate.m */,
+				4B30421A1862B02900154BE3 /* ViewController.h */,
+				4B30421B1862B02900154BE3 /* ViewController.m */,
+				4B1DEE821869498200E84AA7 /* CreateRodeoViewController.h */,
+				4B1DEE831869498200E84AA7 /* CreateRodeoViewController.m */,
+				4B1DEE841869498200E84AA7 /* CreateRodeoViewController.xib */,
+				4B267B0F1872980E0004FCB4 /* CreateRodeoViewController_iPad.xib */,
+				4B1DEE87186969AD00E84AA7 /* EventsViewController.h */,
+				4B1DEE88186969AD00E84AA7 /* EventsViewController.m */,
+				4B1DEE89186969AD00E84AA7 /* EventsViewController.xib */,
+				4B267B1118729B4F0004FCB4 /* EventsViewController_iPad.xib */,
+				4B529AF4186B57A80062535B /* RodeoListViewController.h */,
+				4B529AF5186B57A80062535B /* RodeoListViewController.m */,
+				4B43E1331933297C00C65CE1 /* RodeoListViewController.xib */,
+				4B529AF9186B5B150062535B /* SettingsViewController.h */,
+				4B529AFA186B5B150062535B /* SettingsViewController.m */,
+				4B529AFB186B5B150062535B /* SettingsViewController.xib */,
+				4B529AFE186B63700062535B /* SearchRodeoViewController.h */,
+				4B529AFF186B63700062535B /* SearchRodeoViewController.m */,
+				4B529B00186B63700062535B /* SearchRodeoViewController.xib */,
+				4B4D8299186D4F79003868CD /* EventDetailsViewController.h */,
+				4B4D829A186D4F79003868CD /* EventDetailsViewController.m */,
+				4B43E12F1933295F00C65CE1 /* EventDetailsViewController.xib */,
+				4B267B131872A0C20004FCB4 /* EventDetailsViewController_iPad.xib */,
+				4B4B4620186D993000AB739B /* GettingStartedViewController.h */,
+				4B4B4621186D993000AB739B /* GettingStartedViewController.m */,
+				4B4B4622186D993000AB739B /* GettingStartedViewController.xib */,
+				4BB6F5A71ADABC3B001D66DC /* GettingStarted_ipad.xib */,
+				4B4B4625186D99E700AB739B /* AboutViewController.h */,
+				4B4B4626186D99E700AB739B /* AboutViewController.m */,
+				4B4B4627186D99E700AB739B /* AboutViewController.xib */,
+				4BB6F5A91ADABD10001D66DC /* AboutRodeo_ipad.xib */,
+				4B1EB5B71874188C00669350 /* PickLocationViewController.h */,
+				4B1EB5B81874188C00669350 /* PickLocationViewController.m */,
+				4B1EB5B91874188C00669350 /* PickLocationViewController.xib */,
+				4B1EB5C21874606B00669350 /* PickLocationViewController_iPad.xib */,
+				4B30421D1862B02900154BE3 /* Images.xcassets */,
+				4B30420C1862B02800154BE3 /* Supporting Files */,
+				4B5B30AB187EDE6F007815B3 /* MainNavigationController.h */,
+				4B5B30AC187EDE6F007815B3 /* MainNavigationController.m */,
+				4B5B30AD187EDE6F007815B3 /* MainNavigationController.xib */,
+				4B632E18195DE5D400464B0C /* rodeolist.plist */,
+				A41F36191C47A67A0029D1A6 /* Images-2.xcassets */,
+			);
+			path = MyRodeo;
+			sourceTree = "<group>";
+		};
+		4B30420C1862B02800154BE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B30420D1862B02800154BE3 /* MyRodeo-Info.plist */,
+				4B30420E1862B02900154BE3 /* InfoPlist.strings */,
+				4B3042111862B02900154BE3 /* main.m */,
+				4B3042131862B02900154BE3 /* MyRodeo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B30422A1862B02900154BE3 /* MyRodeoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B3042301862B02900154BE3 /* MyRodeoTests.m */,
+				4B30422B1862B02900154BE3 /* Supporting Files */,
+			);
+			path = MyRodeoTests;
+			sourceTree = "<group>";
+		};
+		4B30422B1862B02900154BE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B30422C1862B02900154BE3 /* MyRodeoTests-Info.plist */,
+				4B30422D1862B02900154BE3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B6834E31AD9944F0051BF9D /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				4B6834E41AD9944F0051BF9D /* CustomIOS7AlertView.h */,
+				4B6834E51AD9944F0051BF9D /* CustomIOS7AlertView.m */,
+			);
+			path = CustomAlertView;
+			sourceTree = "<group>";
+		};
+		4BE75C401882FD9E00490E4A /* font */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA98481C0D91F700135D66 /* ufonts.com_segoe-print-bold.ttf */,
+				A4EA98451C0D7D1F00135D66 /* segoeprb.ttf */,
+				A4A81C241C0D75CD00F30899 /* Segoe_UI_bold.ttf */,
+				4BE75C44188318E500490E4A /* BrushScriptStd.ttf */,
+				4B23D8BA1890E76800A15163 /* Segoe Print.ttf */,
+				4BE75C45188318E500490E4A /* Lato-Bla.ttf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+		A41F35DC1C477A6C0029D1A6 /* orientation */ = {
+			isa = PBXGroup;
+			children = (
+				A41F35DF1C477A860029D1A6 /* UIDevice-Hardware.h */,
+				A41F35E01C477A860029D1A6 /* UIDevice-Hardware.m */,
+			);
+			name = orientation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B3042011862B02800154BE3 /* MyRodeo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3042341862B02900154BE3 /* Build configuration list for PBXNativeTarget "MyRodeo" */;
+			buildPhases = (
+				4B3041FE1862B02800154BE3 /* Sources */,
+				4B3041FF1862B02800154BE3 /* Frameworks */,
+				4B3042001862B02800154BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyRodeo;
+			productName = MyRodeo;
+			productReference = 4B3042021862B02800154BE3 /* MyRodeo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B3042221862B02900154BE3 /* MyRodeoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3042371862B02900154BE3 /* Build configuration list for PBXNativeTarget "MyRodeoTests" */;
+			buildPhases = (
+				4B30421F1862B02900154BE3 /* Sources */,
+				4B3042201862B02900154BE3 /* Frameworks */,
+				4B3042211862B02900154BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B3042291862B02900154BE3 /* PBXTargetDependency */,
+			);
+			name = MyRodeoTests;
+			productName = MyRodeoTests;
+			productReference = 4B3042231862B02900154BE3 /* MyRodeoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B3041FA1862B02800154BE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = ClientsSolution;
+				TargetAttributes = {
+					4B3042011862B02800154BE3 = {
+						DevelopmentTeam = AF363D4UMM;
+					};
+					4B3042221862B02900154BE3 = {
+						TestTargetID = 4B3042011862B02800154BE3;
+					};
+				};
+			};
+			buildConfigurationList = 4B3041FD1862B02800154BE3 /* Build configuration list for PBXProject "MyRodeo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B3041F91862B02800154BE3;
+			productRefGroup = 4B3042031862B02800154BE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B3042011862B02800154BE3 /* MyRodeo */,
+				4B3042221862B02900154BE3 /* MyRodeoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B3042001862B02800154BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB6F5AA1ADABD10001D66DC /* AboutRodeo_ipad.xib in Resources */,
+				4B63B7FE18850DBC00F60CCE /* bg_.png in Resources */,
+				A43507981C48C4CE004E9EEA /* bg375.png in Resources */,
+				4B529B02186B63700062535B /* SearchRodeoViewController.xib in Resources */,
+				4B70BA17187AEC3800F3A820 /* aboutmyrodeo.png in Resources */,
+				4BE75C46188318E500490E4A /* BrushScriptStd.ttf in Resources */,
+				4B1EB5BB1874188C00669350 /* PickLocationViewController.xib in Resources */,
+				4B1DEE971869DF2A00E84AA7 /* icon.png in Resources */,
+				4BB6F5A81ADABC3B001D66DC /* GettingStarted_ipad.xib in Resources */,
+				4B33258F1885859300B249F4 /* innerbg_landscape.png in Resources */,
+				4B1DEE95186983F200E84AA7 /* doneup.png in Resources */,
+				4B1DEE8118693FE700E84AA7 /* buttonbg.png in Resources */,
+				4B1DEE94186983F200E84AA7 /* donedown.png in Resources */,
+				A41F36171C478EF20029D1A6 /* Defaults-1136h@2x.png in Resources */,
+				4B2877D81887C79C002C832D /* innerbg_.png in Resources */,
+				A41F36071C478EF20029D1A6 /* Default-Landscape.png in Resources */,
+				4B2877D61887A79D002C832D /* Main_iPhone.storyboard in Resources */,
+				A43507961C48C44E004E9EEA /* innerbg375.png in Resources */,
+				4B2246E218633BD60084F8B9 /* bg.png in Resources */,
+				4B267B1218729B4F0004FCB4 /* EventsViewController_iPad.xib in Resources */,
+				4B1EB5C118741EEC00669350 /* location.png in Resources */,
+				A4B8A0E01C1E9D8E007E90A1 /* cell_shorimg.png in Resources */,
+				4BE75C3D1882FAEE00490E4A /* btn_bg.png in Resources */,
+				4B43E1341933297C00C65CE1 /* RodeoListViewController.xib in Resources */,
+				4B4D829F186D60B6003868CD /* bg_landscape.png in Resources */,
+				4B1DEE861869498200E84AA7 /* CreateRodeoViewController.xib in Resources */,
+				4B70BA10187AEABB00F3A820 /* createrodeo.png in Resources */,
+				4B23B9DD186C104B00719692 /* cellbg.png in Resources */,
+				A43507941C48C397004E9EEA /* innerbg6.png in Resources */,
+				4B5B30AF187EDE6F007815B3 /* MainNavigationController.xib in Resources */,
+				4B1DEE7F18693C6300E84AA7 /* navbar.png in Resources */,
+				A4A81C251C0D75CD00F30899 /* Segoe_UI_bold.ttf in Resources */,
+				4B1EB5C31874606B00669350 /* PickLocationViewController_iPad.xib in Resources */,
+				4B529AFD186B5B150062535B /* SettingsViewController.xib in Resources */,
+				A41F36031C478EF20029D1A6 /* Default-667h@2x.png in Resources */,
+				4B1336231ADBB05E0012E0F2 /* HelpViewController.xib in Resources */,
+				4B3325941885AE2D00B249F4 /* Default.png in Resources */,
+				A41F36051C478EF20029D1A6 /* Default-736h@3x.png in Resources */,
+				4BE75C47188318E500490E4A /* Lato-Bla.ttf in Resources */,
+				A41F36131C478EF20029D1A6 /* Default768x1024.png in Resources */,
+				A4EA98461C0D7D1F00135D66 /* segoeprb.ttf in Resources */,
+				4B2877D51887A79D002C832D /* Main_iPad.storyboard in Resources */,
+				A41F360D1C478EF20029D1A6 /* Default.png in Resources */,
+				4B23D8BB1890E76800A15163 /* Segoe Print.ttf in Resources */,
+				4B1DEE8B186969AD00E84AA7 /* EventsViewController.xib in Resources */,
+				4B632E19195DE5D400464B0C /* rodeolist.plist in Resources */,
+				4B1336151ADBAF690012E0F2 /* Rodeo.sqlite in Resources */,
+				A4EA98491C0D91F700135D66 /* ufonts.com_segoe-print-bold.ttf in Resources */,
+				4B8030EE188542E6002705F8 /* navigationbar.png in Resources */,
+				4B529AF3186B556D0062535B /* Default-568h@2x.png in Resources */,
+				4B70BA19187AEC6C00F3A820 /* help.png in Resources */,
+				4B8030F018854B36002705F8 /* backbtn.png in Resources */,
+				A41F36111C478EF20029D1A6 /* Default~Landscape@2x.png in Resources */,
+				4B4B4624186D993000AB739B /* GettingStartedViewController.xib in Resources */,
+				4BB6F5B11ADABF1B001D66DC /* HelpRodeo_ipad.xib in Resources */,
+				4B7403781ADA946700251CAD /* EventsLookUpViewController_ipad.xib in Resources */,
+				4B70BA15187AEBC700F3A820 /* settings.png in Resources */,
+				4B3A31CE18A67F6500E8858F /* donebtn.png in Resources */,
+				4B30421E1862B02900154BE3 /* Images.xcassets in Resources */,
+				4B267B101872980E0004FCB4 /* CreateRodeoViewController_iPad.xib in Resources */,
+				4B8030F218854F40002705F8 /* cellcontentsbg.png in Resources */,
+				4B70BA11187AEABB00F3A820 /* lookuparodeo.png in Resources */,
+				4B31B7211871567400EAB0CA /* HomeViewController_iPad.xib in Resources */,
+				4B43E1301933295F00C65CE1 /* EventDetailsViewController.xib in Resources */,
+				4B43E1321933296D00C65CE1 /* EventsLookUpViewController.xib in Resources */,
+				4BE75C3F1882FBB400490E4A /* logotext.png in Resources */,
+				A41F361A1C47A67A0029D1A6 /* Images-2.xcassets in Resources */,
+				4B23D8B81890E15B00A15163 /* icon@2x.png in Resources */,
+				A41F36151C478EF20029D1A6 /* Default1536x2048@2x.png in Resources */,
+				4B8030F618855D8D002705F8 /* cellbg_selected.png in Resources */,
+				4B3042101862B02900154BE3 /* InfoPlist.strings in Resources */,
+				4B8030EC188541E6002705F8 /* innerbg.png in Resources */,
+				A41F36011C478EF20029D1A6 /* Default-568h@2x.png in Resources */,
+				4B1DEE8D18696D6F00E84AA7 /* scroll_bg.png in Resources */,
+				4B70BA13187AEB7000F3A820 /* gettingstarted.png in Resources */,
+				4B4B4629186D99E700AB739B /* AboutViewController.xib in Resources */,
+				A41F360B1C478EF20029D1A6 /* Default-Landscape@3x.png in Resources */,
+				4B8030F41885507A002705F8 /* cellcontentsbg_short.png in Resources */,
+				4B267B141872A0C20004FCB4 /* EventDetailsViewController_iPad.xib in Resources */,
+				A41F36091C478EF20029D1A6 /* Default-Landscape@2x.png in Resources */,
+				4B2246DF186333A00084F8B9 /* HomeViewController.xib in Resources */,
+				A41F360F1C478EF20029D1A6 /* Default~iphone.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3042211862B02900154BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B30422F1862B02900154BE3 /* InfoPlist.strings in Resources */,
+				A4EA984A1C0D91F700135D66 /* ufonts.com_segoe-print-bold.ttf in Resources */,
+				A41F36121C478EF20029D1A6 /* Default~Landscape@2x.png in Resources */,
+				A4A81C261C0D75CD00F30899 /* Segoe_UI_bold.ttf in Resources */,
+				A41F36081C478EF20029D1A6 /* Default-Landscape.png in Resources */,
+				A4EA98471C0D7D1F00135D66 /* segoeprb.ttf in Resources */,
+				A41F36161C478EF20029D1A6 /* Default1536x2048@2x.png in Resources */,
+				4B1336161ADBAF690012E0F2 /* Rodeo.sqlite in Resources */,
+				A41F36061C478EF20029D1A6 /* Default-736h@3x.png in Resources */,
+				A41F360E1C478EF20029D1A6 /* Default.png in Resources */,
+				A41F360C1C478EF20029D1A6 /* Default-Landscape@3x.png in Resources */,
+				A41F36041C478EF20029D1A6 /* Default-667h@2x.png in Resources */,
+				A41F36181C478EF20029D1A6 /* Defaults-1136h@2x.png in Resources */,
+				A41F36021C478EF20029D1A6 /* Default-568h@2x.png in Resources */,
+				A41F36101C478EF20029D1A6 /* Default~iphone.png in Resources */,
+				4B1336241ADBB05E0012E0F2 /* HelpViewController.xib in Resources */,
+				A41F360A1C478EF20029D1A6 /* Default-Landscape@2x.png in Resources */,
+				A41F36141C478EF20029D1A6 /* Default768x1024.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B3041FE1862B02800154BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B529AF7186B57A80062535B /* RodeoListViewController.m in Sources */,
+				4B30421C1862B02900154BE3 /* ViewController.m in Sources */,
+				4B529B01186B63700062535B /* SearchRodeoViewController.m in Sources */,
+				4B1DEE8A186969AD00E84AA7 /* EventsViewController.m in Sources */,
+				A41F35E81C477A860029D1A6 /* UIDevice-Hardware.m in Sources */,
+				4B529AFC186B5B150062535B /* SettingsViewController.m in Sources */,
+				4B4B4623186D993000AB739B /* GettingStartedViewController.m in Sources */,
+				4B6834E61AD9944F0051BF9D /* CustomIOS7AlertView.m in Sources */,
+				4B1EB5BA1874188C00669350 /* PickLocationViewController.m in Sources */,
+				4B3042161862B02900154BE3 /* AppDelegate.m in Sources */,
+				4B3042121862B02900154BE3 /* main.m in Sources */,
+				4B71C58D1920CEC0006CB693 /* EventsLookUpViewController.m in Sources */,
+				4B2246DE186333A00084F8B9 /* HomeViewController.m in Sources */,
+				4B4D829C186D4F79003868CD /* EventDetailsViewController.m in Sources */,
+				4B41A38A18DEBFAD004A3147 /* Rodeo.m in Sources */,
+				4B1DEE901869740F00E84AA7 /* EventVO.m in Sources */,
+				4B1336211ADBB05E0012E0F2 /* HelpViewController.m in Sources */,
+				4B4B4628186D99E700AB739B /* AboutViewController.m in Sources */,
+				4B1DEE851869498200E84AA7 /* CreateRodeoViewController.m in Sources */,
+				4B5B30AE187EDE6F007815B3 /* MainNavigationController.m in Sources */,
+				4B44F2301923BC8400FE95BC /* ContestantVO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B30421F1862B02900154BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3042311862B02900154BE3 /* MyRodeoTests.m in Sources */,
+				A41F35F11C477F310029D1A6 /* UIDevice-Hardware.m in Sources */,
+				4B1336221ADBB05E0012E0F2 /* HelpViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B3042291862B02900154BE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B3042011862B02800154BE3 /* MyRodeo */;
+			targetProxy = 4B3042281862B02900154BE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B30420E1862B02900154BE3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B30420F1862B02900154BE3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4B30422D1862B02900154BE3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B30422E1862B02900154BE3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B3042321862B02900154BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "040886cc-1c47-438c-a1f3-a1a39da96d11";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		4B3042331862B02900154BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "040886cc-1c47-438c-a1f3-a1a39da96d11";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		4B3042351862B02900154BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyRodeo/MyRodeo-Prefix.pch";
+				INFOPLIST_FILE = "MyRodeo/MyRodeo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiwebcode.bscpro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "040886cc-1c47-438c-a1f3-a1a39da96d11";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4B3042361862B02900154BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyRodeo/MyRodeo-Prefix.pch";
+				INFOPLIST_FILE = "MyRodeo/MyRodeo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiwebcode.bscpro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "040886cc-1c47-438c-a1f3-a1a39da96d11";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4B3042381862B02900154BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyRodeo.app/MyRodeo";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyRodeo/MyRodeo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyRodeoTests/MyRodeoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "040886cc-1c47-438c-a1f3-a1a39da96d11";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4B3042391862B02900154BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyRodeo.app/MyRodeo";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Derek Carr (GC4T5BSWJL)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyRodeo/MyRodeo-Prefix.pch";
+				INFOPLIST_FILE = "MyRodeoTests/MyRodeoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "040886cc-1c47-438c-a1f3-a1a39da96d11";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B3041FD1862B02800154BE3 /* Build configuration list for PBXProject "MyRodeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3042321862B02900154BE3 /* Debug */,
+				4B3042331862B02900154BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B3042341862B02900154BE3 /* Build configuration list for PBXNativeTarget "MyRodeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3042351862B02900154BE3 /* Debug */,
+				4B3042361862B02900154BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B3042371862B02900154BE3 /* Build configuration list for PBXNativeTarget "MyRodeoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3042381862B02900154BE3 /* Debug */,
+				4B3042391862B02900154BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B3041FA1862B02800154BE3 /* Project object */;
+}

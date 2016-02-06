@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventsViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="nSv-OT-6C0" id="jF5-cU-TCB"/>
+                <outlet property="bgimage" destination="CyS-4h-YeU" id="km5-Wy-INU"/>
+                <outlet property="pickerview" destination="Dcl-CX-QHI" id="Kzw-pu-AxC"/>
+                <outlet property="tblview" destination="bKv-Nd-GaE" id="6jQ-m5-OHZ"/>
+                <outlet property="toolbar" destination="ibx-E9-Fzr" id="f60-cL-e7X"/>
+                <outlet property="view" destination="1" id="cEF-0y-PMh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="innerbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="CyS-4h-YeU">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="bKv-Nd-GaE">
+                    <rect key="frame" x="0.0" y="48" width="768" height="956"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DFN-NT-hN0"/>
+                        <outlet property="delegate" destination="-1" id="j3I-v6-Or3"/>
+                    </connections>
+                </tableView>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcl-CX-QHI">
+                    <rect key="frame" x="0.0" y="788" width="768" height="216"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="igx-q0-dSI"/>
+                        <outlet property="delegate" destination="-1" id="GSu-8n-Fmy"/>
+                    </connections>
+                </pickerView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibx-E9-Fzr">
+                    <rect key="frame" x="0.0" y="744" width="768" height="44"/>
+                    <items>
+                        <barButtonItem title="Done" id="huH-td-dzz">
+                            <connections>
+                                <action selector="doneButtonPressed" destination="-1" id="601-vt-VI1"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nSv-OT-6C0">
+                    <rect key="frame" x="374" y="430" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="#Contestants" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y45-67-tgY">
+                    <rect key="frame" x="354" y="10" width="142" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="T3c-Pu-0ku"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="#Places" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q9-l4-f2e">
+                    <rect key="frame" x="512" y="10" width="84" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9q9-l4-f2e" firstAttribute="baseline" secondItem="y45-67-tgY" secondAttribute="baseline" id="0ee-Sm-ERU"/>
+                <constraint firstItem="CyS-4h-YeU" firstAttribute="bottom" secondItem="Dcl-CX-QHI" secondAttribute="bottom" id="4Ch-5O-VjI"/>
+                <constraint firstItem="nSv-OT-6C0" firstAttribute="top" secondItem="1" secondAttribute="top" constant="430" id="6Bi-t9-vWw"/>
+                <constraint firstItem="ibx-E9-Fzr" firstAttribute="centerX" secondItem="nSv-OT-6C0" secondAttribute="centerX" id="7Cp-Xf-x0l"/>
+                <constraint firstItem="9q9-l4-f2e" firstAttribute="top" secondItem="y45-67-tgY" secondAttribute="top" id="Bm4-BN-bcc"/>
+                <constraint firstItem="9q9-l4-f2e" firstAttribute="leading" secondItem="y45-67-tgY" secondAttribute="trailing" constant="16" id="Fnw-If-BRB"/>
+                <constraint firstItem="ibx-E9-Fzr" firstAttribute="trailing" secondItem="Dcl-CX-QHI" secondAttribute="trailing" id="Gf5-YX-ME7"/>
+                <constraint firstAttribute="trailing" secondItem="ibx-E9-Fzr" secondAttribute="trailing" id="K2w-OB-PRo"/>
+                <constraint firstItem="ibx-E9-Fzr" firstAttribute="leading" secondItem="Dcl-CX-QHI" secondAttribute="leading" id="OTD-00-uKX"/>
+                <constraint firstItem="Dcl-CX-QHI" firstAttribute="leading" secondItem="bKv-Nd-GaE" secondAttribute="leading" id="PVi-es-jla"/>
+                <constraint firstItem="CyS-4h-YeU" firstAttribute="leading" secondItem="bKv-Nd-GaE" secondAttribute="leading" id="QpO-OK-Kvp"/>
+                <constraint firstItem="Dcl-CX-QHI" firstAttribute="trailing" secondItem="bKv-Nd-GaE" secondAttribute="trailing" id="SMi-8D-oOF"/>
+                <constraint firstItem="CyS-4h-YeU" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Xdu-io-2sL"/>
+                <constraint firstItem="bKv-Nd-GaE" firstAttribute="top" secondItem="y45-67-tgY" secondAttribute="bottom" constant="8" symbolic="YES" id="Z6I-S3-Ii7"/>
+                <constraint firstItem="y45-67-tgY" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="354" id="a1m-lJ-PVJ"/>
+                <constraint firstItem="ibx-E9-Fzr" firstAttribute="trailing" secondItem="CyS-4h-YeU" secondAttribute="trailing" id="aCv-zV-vHs"/>
+                <constraint firstItem="Dcl-CX-QHI" firstAttribute="top" secondItem="ibx-E9-Fzr" secondAttribute="bottom" id="fht-ry-qD7"/>
+                <constraint firstItem="CyS-4h-YeU" firstAttribute="top" secondItem="1" secondAttribute="top" id="pCf-Vh-Svd"/>
+                <constraint firstAttribute="bottom" secondItem="bKv-Nd-GaE" secondAttribute="bottom" id="pY0-9D-MHJ"/>
+                <constraint firstItem="y45-67-tgY" firstAttribute="top" secondItem="1" secondAttribute="top" constant="10" id="uHa-Eb-ArZ"/>
+                <constraint firstItem="Dcl-CX-QHI" firstAttribute="bottom" secondItem="bKv-Nd-GaE" secondAttribute="bottom" id="ye6-Ge-DAR"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="innerbg.png" width="320" height="568"/>
+    </resources>
+</document>

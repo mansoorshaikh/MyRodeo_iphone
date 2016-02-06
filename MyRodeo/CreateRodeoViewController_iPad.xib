@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateRodeoViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="7Cd-zs-T93" id="z33-wx-kgt"/>
+                <outlet property="datepicker" destination="1hm-Bw-qv7" id="Dfr-8j-9tf"/>
+                <outlet property="eventsbtn" destination="jNH-tu-57w" id="RaZ-fP-srG"/>
+                <outlet property="locationTextField" destination="Da8-Aj-BcT" id="rtK-6h-bPD"/>
+                <outlet property="nameTextField" destination="0kg-xG-ru3" id="dnw-c0-5gK"/>
+                <outlet property="noofroundsTextFields" destination="1QL-xv-XzB" id="jgg-Cj-np6"/>
+                <outlet property="rodeoAddressLabel" destination="oT0-sg-hOt" id="p8a-Tp-AS1"/>
+                <outlet property="rodeoDateLabel" destination="Idy-80-mn4" id="D29-oX-P93"/>
+                <outlet property="rodeo_noofrounds_Label" destination="V80-ev-Gjs" id="ILI-Ee-9Gh"/>
+                <outlet property="rodeodateTextField" destination="Rgx-gA-zJq" id="2ut-8I-jr3"/>
+                <outlet property="rodeonameLabel" destination="Zeo-t9-pJl" id="7fP-fD-Nsl"/>
+                <outlet property="saverodeobtn" destination="scz-5P-c0m" id="rOB-TZ-QgI"/>
+                <outlet property="startrodeobtn" destination="3Ys-mu-C1X" id="XTY-og-mf3"/>
+                <outlet property="toolbar" destination="zaE-Mz-Zu5" id="ULg-Ih-1Xt"/>
+                <outlet property="view" destination="1" id="rq6-c4-aiE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="innerbg.png" id="nas-1v-rHI">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pune" borderStyle="roundedRect" placeholder="LOCATION" textAlignment="center" minimumFontSize="17" id="Da8-Aj-BcT">
+                    <rect key="frame" x="134" y="210" width="500" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="0Ag-Zo-gZa"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Ys-mu-C1X">
+                    <rect key="frame" x="20" y="694" width="350" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="38"/>
+                    <state key="normal" title="Start Rodeo" backgroundImage="btn_bg.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startRodeo" destination="-1" eventType="touchUpInside" id="R2l-X8-bsR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="scz-5P-c0m">
+                    <rect key="frame" x="398" y="694" width="350" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="38"/>
+                    <state key="normal" title="Save Rodeo" backgroundImage="btn_bg.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveRodeo" destination="-1" eventType="touchUpInside" id="XLq-09-Amd"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NUMBER OF ROUNDS" textAlignment="center" minimumFontSize="17" id="1QL-xv-XzB">
+                    <rect key="frame" x="134" y="462" width="500" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Th3-nB-xTY"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DATE" textAlignment="center" minimumFontSize="17" id="Rgx-gA-zJq">
+                    <rect key="frame" x="134" y="334" width="500" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="yEZ-cp-aBC"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jNH-tu-57w">
+                    <rect key="frame" x="134" y="561" width="500" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="38"/>
+                    <state key="normal" title="Events" backgroundImage="btn_bg.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="eventsButtonClicked" destination="-1" eventType="touchUpInside" id="7nw-7c-DrQ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Rodeo 1" borderStyle="roundedRect" placeholder="NAME" textAlignment="center" minimumFontSize="17" id="0kg-xG-ru3">
+                    <rect key="frame" x="134" y="86" width="500" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="YRo-Cf-FII"/>
+                    </connections>
+                </textField>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="1hm-Bw-qv7">
+                    <rect key="frame" x="0.0" y="788" width="768" height="216"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <date key="date" timeIntervalSinceReferenceDate="410163767.51026797">
+                        <!--2013-12-31 06:22:47 +0000-->
+                    </date>
+                </datePicker>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zaE-Mz-Zu5">
+                    <rect key="frame" x="0.0" y="744" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <barButtonItem title="Done" id="prd-Cq-lQk">
+                            <connections>
+                                <action selector="doneButtonPressed" destination="-1" id="Lgx-Xk-yqA"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="7Cd-zs-T93">
+                    <rect key="frame" x="374" y="294" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rodeo Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zeo-t9-pJl">
+                    <rect key="frame" x="134" y="57" width="142" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rodeo Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oT0-sg-hOt">
+                    <rect key="frame" x="134" y="181" width="142" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rodeo Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Idy-80-mn4">
+                    <rect key="frame" x="134" y="306" width="142" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Rounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V80-ev-Gjs">
+                    <rect key="frame" x="134" y="431" width="263" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_bg.png" width="500" height="100"/>
+        <image name="innerbg.png" width="320" height="568"/>
+    </resources>
+</document>
