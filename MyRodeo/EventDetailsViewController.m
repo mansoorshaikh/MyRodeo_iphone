@@ -462,31 +462,32 @@
     imgviewLandscape.frame=CGRectMake(0, 0, height, width);
     
     imgviewLandscape.image=[UIImage imageNamed:@"innerbg_landscape.png"];
-    if(height==568){
-        imgview.image=[UIImage imageNamed:@"innerbg.png"];
-        [sortbtn setFrame:CGRectMake(140,460,60,40)];
-        [sortBtn_Landscape setFrame:CGRectMake(230,240,80,30)];
-
-    }else{
-        imgview.image=[UIImage imageNamed:@"innerbg_.png"];
-        [sortbtn setFrame:CGRectMake(140,500,60,40)];
-        [sortBtn_Landscape setFrame:CGRectMake(230,300,80,30)];
-    }
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
-        sharebtn.font = [UIFont fontWithName:@"Segoe Print" size:14];
-        editbtn.font = [UIFont fontWithName:@"Segoe Print" size:14];
-        sortbtn.font = [UIFont fontWithName:@"Segoe Print" size:16];
-        sortBtn_Landscape.font = [UIFont fontWithName:@"Segoe Print" size:16];
+        if(height==568){
+            imgview.image=[UIImage imageNamed:@"innerbg.png"];
+            [sortbtn setFrame:CGRectMake(140,460,60,40)];
+            [sortBtn_Landscape setFrame:CGRectMake(230,240,80,30)];
+            
+        }else{
+            imgview.image=[UIImage imageNamed:@"innerbg_.png"];
+            [sortbtn setFrame:CGRectMake(140,500,60,40)];
+            [sortBtn_Landscape setFrame:CGRectMake(230,300,80,30)];
+        }
 
-        addcontestantbtn.font = [UIFont fontWithName:@"Segoe Print" size:14];
+        [sharebtn.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:14.0]];
+        [editbtn.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:14.0]];
+        [sortbtn.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:16.0]];
+        [sortBtn_Landscape.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:16.0]];
+        [addcontestantbtn.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:14.0]];
     }else{
-        sharebtn.font = [UIFont fontWithName:@"Segoe Print" size:30];
-        editbtn.font = [UIFont fontWithName:@"Segoe Print" size:30];
-         [sortbtn setFrame:CGRectMake((self.view.bounds.size.width/2)-75,self.view.bounds.size.height-80,150,40)];
-        sortbtn.font = [UIFont fontWithName:@"Segoe Print" size:35];
-        sortBtn_Landscape.font = [UIFont fontWithName:@"Segoe Print" size:35];
-        addcontestantbtn.font = [UIFont fontWithName:@"Segoe Print" size:30];
+         [sortbtn setFrame:CGRectMake((self.view.bounds.size.width/2)-75,self.view.bounds.size.height-120,150,40)];
+        [sharebtn.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:30.0]];
+        [editbtn.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:30.0]];
+        [sortbtn.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:35.0]];
+        [sortBtn_Landscape.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:35.0]];
+        [addcontestantbtn.titleLabel setFont:[UIFont fontWithName:@"Segoe Print" size:30.0]];
+
     }
     
     [self.view addSubview:mainPortraitView];
@@ -805,7 +806,6 @@
     else{
         [self.tblview reloadData];
     }
-
 }
 
 -(NSMutableArray*)sortScoredAvgFunction:(NSMutableArray*)contArray{

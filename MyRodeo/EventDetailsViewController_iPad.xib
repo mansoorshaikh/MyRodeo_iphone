@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -21,6 +21,8 @@
                 <outlet property="roundNumberLabel_landscape" destination="UVF-4d-SyF" id="dbh-Rr-yvK"/>
                 <outlet property="scoreLabel" destination="yBm-67-TJP" id="t7K-AY-HOi"/>
                 <outlet property="scoreLabel_portrait" destination="mI5-9b-T9B" id="IOC-pa-zfl"/>
+                <outlet property="sortBtn_Landscape" destination="dRE-xG-oRP" id="enl-Jh-1nn"/>
+                <outlet property="sortbtn" destination="JuD-z8-lc0" id="9QC-Zy-iRT"/>
                 <outlet property="tblview" destination="q8P-di-E0q" id="PKq-z6-QZH"/>
                 <outlet property="tblview_landscape" destination="aHl-xV-ytn" id="aFC-2j-Y4K"/>
                 <outlet property="view" destination="TFH-u1-odl" id="WsF-Vw-gfc"/>

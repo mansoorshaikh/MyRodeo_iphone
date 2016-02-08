@@ -26,6 +26,7 @@
 
 - (void) animateTextView:(BOOL) up
 {
+    
     const float movementDuration = 0.3f; // tweak as needed
     int movement= movement = (up ? -movementDistance : movementDistance);
     NSLog(@"%d",movement);
@@ -33,9 +34,9 @@
     [UIView beginAnimations: @"anim" context: nil];
     [UIView setAnimationBeginsFromCurrentState: YES];
     [UIView setAnimationDuration: movementDuration];
-    
-    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
-    [UIView commitAnimations];
+
+            self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+            [UIView commitAnimations];
 }
 
 
@@ -56,7 +57,7 @@
     toolbar.hidden=YES;
     [contestantTextField resignFirstResponder];
     [placesTextField resignFirstResponder];
-    selectedEvent.eventname=currentTextField.text;
+    //selectedEvent.eventname=currentTextField.text;
     if(selectedEvent!=nil && ![selectedEvent.eventname isEqualToString:@"Other"]){
         selectedEvent.eventname=currentTextField.text;
         selectedEvent.contestants=contestantTextField.text;
@@ -75,7 +76,29 @@
     UIButton *btn=(UIButton*)[self.view viewWithTag:tag+300];
     btn.hidden=NO;
 }
+-(void)pickerValue{
+    pickerview.hidden=YES;
+    toolbar.hidden=YES;
 
+    [contestantTextField resignFirstResponder];
+    [placesTextField resignFirstResponder];
+    //selectedEvent.eventname=currentTextField.text;
+    if(selectedEvent!=nil && ![selectedEvent.eventname isEqualToString:@"Other"]){
+        selectedEvent.eventname=currentTextField.text;
+        selectedEvent.contestants=contestantTextField.text;
+        selectedEvent.places=placesTextField.text;
+        selectedEvent.serverdownload=[NSString stringWithFormat:@"%d",currentTextField.tag-100];
+        if([selectedEvent.eventType isEqualToString:@""] || selectedEvent.eventType==nil){
+            if([timedEventNamesArray containsObject:selectedEvent.eventname]){
+                selectedEvent.eventType=@"timed";
+            }else if([scoredEventsNamesArray containsObject:selectedEvent.eventname]){
+                selectedEvent.eventType=@"scored";
+            }
+        }
+        [eventSelectedPickerArray replaceObjectAtIndex:currentTextField.tag-100 withObject:selectedEvent];
+    }
+    [self fillUsedEventsPickerArray];
+}
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
 	if([title isEqualToString:@"OK"]){
@@ -240,7 +263,7 @@
     [self.view bringSubviewToFront:tblview];
 
     pickerview.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"cellbg.png"]];
-    
+
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
         [backButton setFrame:CGRectMake(0,0,50,30)];
@@ -401,6 +424,7 @@
 }
 
 -(void)addEventToRodeo:(UIButton*)btn{
+    [self pickerValue];
     tag=btn.tag;
     currentTextField=(UITextField*)[self.view viewWithTag:tag-300];
     contestantTextField=(UITextField*)[self.view viewWithTag:tag-200];
@@ -540,8 +564,9 @@
             [self animateTextView:YES];
             viewUp=YES;
         }else{
-            [self animateTextView:NO];
+            //[self animateTextView:NO];
             [self animateTextView:YES];
+            viewUp=NO;
         }
         if(textField.tag>=100 && textField.tag<199)
         return NO;
@@ -702,6 +727,7 @@
             contestantsTextField.text=event.contestants;
             eventnameTextField.text=event.eventname;
             addbtn.hidden=YES;
+            plusLbl.hidden=YES;
         }
     }
     
@@ -772,7 +798,9 @@
 -(NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     EventVO *evo=[usedEventsPickerArray objectAtIndex:row];
-    currentTextField.text=evo.eventname;
+    row = [pickerView selectedRowInComponent:0];
+    EventVO *evos = [usedEventsPickerArray objectAtIndex:row];
+    currentTextField.text=evos.eventname;
     return evo.eventname;
 }
 
@@ -787,7 +815,7 @@
     if(height==480){
         return 45.0;
     }else if(height==568){
-            return 55;
+            return 57;
     }else if(height==667){
         return 95.0;
     }else{
