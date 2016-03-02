@@ -30,5 +30,5 @@
 @property(nonatomic,retain) UIBarButtonItem *editBarButton;
 @property(nonatomic,readwrite) BOOL viewUp;
 @property(nonatomic,readwrite) BOOL otherSelected,customEvent;
-
+@property(nonatomic,retain)IBOutlet UILabel *EVENTNAMELBL,*contLbl,*placesLbl;
 @end

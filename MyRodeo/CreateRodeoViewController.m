@@ -28,7 +28,7 @@
 @synthesize oldlat,oldlong,RodeoDB,rodeoList,viewUp;
 @synthesize datepicker,toolbar,appDelegate,activityIndicator,locationManager;
 @synthesize eventsbtn,startrodeobtn,saverodeobtn,bgimage,noofplacesTextField;
-@synthesize nameTextField,locationTextField,noofroundsTextFields,rodeodateTextField;
+@synthesize nameTextField,locationTextField,noofroundsTextFields,rodeodateTextField,locationTextField1;
 @synthesize rodeonameLabel,rodeoAddressLabel,rodeoDateLabel,rodeo_noofrounds_Label;
 
 - (void) animateTextView:(BOOL) up
@@ -86,7 +86,7 @@
 -(IBAction)saveRodeo__{
     [NSThread detachNewThreadSelector:@selector(threadStartAnimating:) toTarget:self withObject:nil];
     
-    NSString *post =[NSString stringWithFormat:@"rodeoname=%@&location=%@&rodeostartdate=%@&numberofrounds=%@&isstarted=no",[nameTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"_"],[locationTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"_"],[rodeodateTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"_"],noofroundsTextFields.text];
+    NSString *post =[NSString stringWithFormat:@"rodeoname=%@&location=%@&rodeostartdate=%@&numberofrounds=%@&isstarted=no",[nameTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"_"],[locationTextField1.text stringByReplacingOccurrencesOfString:@" " withString:@"_"],[rodeodateTextField.text stringByReplacingOccurrencesOfString:@" " withString:@"_"],noofroundsTextFields.text];
     
     NSString *urlString = [[NSString alloc]initWithFormat:@"http://www.mobiwebcode.com/rodeo/addrodeo.php?%@",post];
     
@@ -127,8 +127,8 @@
 }
 
 -(IBAction)doneButtonPressed{
-    viewUp=NO;
-    [self animateTextView:NO];
+    //viewUp=NO;
+    //[self animateTextView:NO];
     NSDateFormatter *f2 = [[NSDateFormatter alloc] init];
     [f2 setDateFormat:@"LLLL dd, YYYY"];
     NSString *s = [f2 stringFromDate:datepicker.date];
@@ -159,25 +159,17 @@
             nameTextField.text=[NSString stringWithFormat:@"Rodeo %d",myInt];
         }
     }
-    
     if(textField==rodeodateTextField){
-        
         toolbar.hidden=NO;
         datepicker.hidden=NO;
         [rodeodateTextField resignFirstResponder];
         [nameTextField resignFirstResponder];
         [noofroundsTextFields resignFirstResponder];
         return NO;
-    }else if(textField==locationTextField){
-        PickLocationViewController *picklocation;
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-            picklocation=[[PickLocationViewController alloc] initWithNibName:@"PickLocationViewController" bundle:nil];
-        else
-            picklocation=[[PickLocationViewController alloc] initWithNibName:@"PickLocationViewController_iPad" bundle:nil];
-        [self.navigationController pushViewController:picklocation animated:YES];
+    }else if(textField==locationTextField1){
         datepicker.hidden=YES;
         toolbar.hidden=YES;
-        return NO;
+        return YES;
     }else if(textField==nameTextField){
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         int myInt = [prefs integerForKey:@"rodeocount"];
@@ -191,7 +183,6 @@
             viewUp=NO;
             [self animateTextView:NO];
         }
-        
         if(viewUp==NO){
             viewUp=YES;
             [self animateTextView:YES];
@@ -205,7 +196,6 @@
             viewUp=NO;
             [self animateTextView:NO];
         }
-        
         if(viewUp==NO){
             viewUp=YES;
             [self animateTextView:YES];
@@ -217,7 +207,15 @@
     }
     return YES;
 }
+-(IBAction)mapAction{
+    PickLocationViewController *picklocation;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+        picklocation=[[PickLocationViewController alloc] initWithNibName:@"PickLocationViewController" bundle:nil];
+    else
+        picklocation=[[PickLocationViewController alloc] initWithNibName:@"PickLocationViewController_iPad" bundle:nil];
+    [self.navigationController pushViewController:picklocation animated:YES];
 
+}
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     if(textField==nameTextField){
         if([nameTextField.text isEqualToString:@""]){
@@ -226,6 +224,11 @@
             nameTextField.text=[NSString stringWithFormat:@"Rodeo %d",myInt];
         }
     }
+     if(textField==locationTextField1){
+         [locationTextField1 resignFirstResponder];
+         return YES;
+     }
+    
     if(viewUp==YES){
         viewUp=NO;
         [self animateTextView:NO];
@@ -238,7 +241,7 @@
     self.navigationController.navigationBar.hidden = NO;
     appDelegate.isLandscapeOK=NO;
     if(![appDelegate.currentlocation isEqualToString:@""] && appDelegate.currentlocation!=nil){
-        locationTextField.text=appDelegate.currentlocation;
+        locationTextField1.text=appDelegate.currentlocation;
     }
 }
 
@@ -260,7 +263,7 @@
             else
                 appDelegate.currentlocation=[NSString stringWithFormat:@"%@,%@",[placemark name],[placemark country]];
             
-            locationTextField.text=appDelegate.currentlocation;
+            locationTextField1.text=appDelegate.currentlocation;
             NSLog(@"appDelegate.currentlocation = %@",appDelegate.currentlocation);
             [locationManager stopUpdatingLocation];
         }
@@ -272,7 +275,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSLog(@"noofcontestants %@",[defaults objectForKey:@"noofcontestants"]);
     int noofcontestants_default=[[defaults objectForKey:@"noofcontestants"] intValue];
-    if([nameTextField.text isEqualToString:@""] || [locationTextField.text isEqualToString:@""] || [rodeodateTextField.text isEqualToString:@""] || [noofroundsTextFields.text isEqualToString:@""]){
+    if([nameTextField.text isEqualToString:@""] || [locationTextField1.text isEqualToString:@""] || [rodeodateTextField.text isEqualToString:@""] || [noofroundsTextFields.text isEqualToString:@""]){
         UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"My Rodeo"
                                                           message:@"Please enter the valid details to proceed."
                                                          delegate:nil
@@ -295,7 +298,7 @@
     {
         NSString *insertSQL;
         insertSQL = [NSString stringWithFormat:
-                     @"insert into rodeodetails (rodeoname,location,rodeostartdate,numberofrounds) VALUES (\"%@\",\"%@\",\"%@\",\"%@\")",nameTextField.text,locationTextField.text,rodeodateTextField.text,noofroundsTextFields.text];
+                     @"insert into rodeodetails (rodeoname,location,rodeostartdate,numberofrounds) VALUES (\"%@\",\"%@\",\"%@\",\"%@\")",nameTextField.text,locationTextField1.text,rodeodateTextField.text,noofroundsTextFields.text];
         
         NSLog(@"insertSQL = %@",insertSQL);
         const char *insert_stmt = [insertSQL UTF8String];
@@ -422,7 +425,10 @@
     noofroundsTextFields.layer.borderColor=[[UIColor blackColor]CGColor];
     noofplacesTextField.layer.borderColor=[[UIColor blackColor]CGColor];
     rodeodateTextField.layer.borderColor=[[UIColor blackColor]CGColor];
-    
+    locationTextField1=[[UITextField alloc]initWithFrame:CGRectMake(30,110,220,40)];
+    locationTextField1.layer.borderColor=[[UIColor blackColor]CGColor];
+    locationTextField1.layer.borderWidth = 0.5f;
+
     nameTextField.layer.borderWidth = 0.5f;
     locationTextField.layer.borderWidth = 0.5f;
     noofroundsTextFields.layer.borderWidth = 0.5f;
@@ -482,6 +488,8 @@
     else
     nameTextField.text=[NSString stringWithFormat:@"Rodeo %d",myInt];
     [locationTextField.layer setCornerRadius:8.0f];
+    [locationTextField1.layer setCornerRadius:8.0f];
+
     [noofroundsTextFields.layer setCornerRadius:8.0f];
     [noofplacesTextField.layer setCornerRadius:8.0f];
     [rodeodateTextField.layer setCornerRadius:8.0f];
@@ -497,10 +505,15 @@
     [numberToolbar sizeToFit];
     noofroundsTextFields.inputAccessoryView = numberToolbar;
     noofplacesTextField.inputAccessoryView = numberToolbar;
+    locationTextField.hidden=YES;
+    [locationTextField1 setDelegate:self];
+    [locationTextField1 setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:locationTextField1];
 }
 
 -(void)cancelNumberPad{
     [noofroundsTextFields resignFirstResponder];
+    viewUp=NO;
     [self animateTextView:NO];
 }
 

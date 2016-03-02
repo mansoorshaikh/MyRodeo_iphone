@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -54,8 +54,8 @@
                         <outlet property="delegate" destination="-1" id="quc-R0-f23"/>
                     </connections>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pune" borderStyle="roundedRect" placeholder="LOCATION" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-p9-SOu">
-                    <rect key="frame" x="30" y="112" width="260" height="40"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pune" borderStyle="roundedRect" placeholder="LOCATION" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bl2-p9-SOu">
+                    <rect key="frame" x="30" y="112" width="220" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="l1P-67-C2A"/>
@@ -104,8 +104,8 @@
                         <action selector="startRodeo" destination="-1" eventType="touchUpInside" id="Ktk-hZ-G0L"/>
                     </connections>
                 </button>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Y11-8H-qAZ">
-                    <rect key="frame" x="0.0" y="392" width="320" height="180"/>
+                <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Y11-8H-qAZ">
+                    <rect key="frame" x="0.0" y="391" width="320" height="180"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <date key="date" timeIntervalSinceReferenceDate="409575915.033086">
@@ -163,6 +163,13 @@
                         <action selector="saveRodeo" destination="-1" eventType="touchUpInside" id="7jo-1i-f56"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVy-dj-U6Y">
+                    <rect key="frame" x="258" y="117" width="32" height="30"/>
+                    <state key="normal" backgroundImage="Mapimage.png"/>
+                    <connections>
+                        <action selector="mapAction" destination="-1" eventType="touchUpInside" id="vxK-LU-VI2"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -206,6 +213,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Mapimage.png" width="256" height="256"/>
         <image name="btn_bg.png" width="500" height="100"/>
     </resources>
 </document>

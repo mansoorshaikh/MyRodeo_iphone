@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventDetailsViewController">
             <connections>
+                <outlet property="activityIndicator" destination="3q8-Gj-dDS" id="qO1-51-8cn"/>
+                <outlet property="activityIndicator_landscape" destination="3q8-Gj-dDS" id="L5W-bd-YB5"/>
                 <outlet property="bgimageview_landscape" destination="0i0-PO-gFY" id="duR-lb-8Y8"/>
                 <outlet property="bgimageview_portrait" destination="x78-iq-Uz7" id="YFA-Pt-NOM"/>
                 <outlet property="for1stinRoundLabel" destination="4dh-kv-RZb" id="xEJ-5p-IMA"/>
@@ -90,6 +92,11 @@
                         <action selector="sortFunction" destination="-1" eventType="touchUpInside" id="LR4-dn-t0H"/>
                     </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="2Fl-rU-xjM">
+                    <rect key="frame" x="353" y="237" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
@@ -194,6 +201,11 @@
                         <action selector="sortFunction" destination="-1" eventType="touchUpInside" id="egx-PF-RrK"/>
                     </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="3q8-Gj-dDS">
+                    <rect key="frame" x="338" y="254" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>

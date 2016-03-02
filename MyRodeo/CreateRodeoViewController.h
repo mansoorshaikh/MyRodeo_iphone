@@ -15,7 +15,7 @@
 @property (nonatomic) sqlite3 *RodeoDB;
 @property(nonatomic,retain) CLLocationManager *locationManager;
 @property(nonatomic,retain) IBOutlet UIToolbar *toolbar;
-@property(nonatomic,retain) IBOutlet UITextField *nameTextField,*locationTextField,*noofroundsTextFields,*rodeodateTextField,*noofplacesTextField;
+@property(nonatomic,retain) IBOutlet UITextField *nameTextField,*locationTextField,*noofroundsTextFields,*rodeodateTextField,*noofplacesTextField,*locationTextField1;
 @property(nonatomic,retain) AppDelegate *appDelegate;
 @property(nonatomic,retain) IBOutlet UIButton *eventsbtn,*startrodeobtn,*saverodeobtn;
 @property(nonatomic,retain) IBOutlet UIImageView *bgimage;

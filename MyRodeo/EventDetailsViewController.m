@@ -468,7 +468,6 @@
             imgview.image=[UIImage imageNamed:@"innerbg.png"];
             [sortbtn setFrame:CGRectMake(140,460,60,40)];
             [sortBtn_Landscape setFrame:CGRectMake(230,240,80,30)];
-            
         }else{
             imgview.image=[UIImage imageNamed:@"innerbg_.png"];
             [sortbtn setFrame:CGRectMake(140,500,60,40)];

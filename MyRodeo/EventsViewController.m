@@ -22,7 +22,7 @@
 @synthesize pickerview,toolbar,currentTextField,index,numberToolbar;
 @synthesize tag,imgview,forRodeo,movementDistance,selectedEvent,otherSelected,customEvent;
 @synthesize usedEventsPickerArray,eventSelectedPickerArray,timedEventNamesArray,scoredEventsNamesArray;
-@synthesize contestantTextField,placesTextField,eventsPickerArray,viewUp;
+@synthesize contestantTextField,placesTextField,eventsPickerArray,viewUp,EVENTNAMELBL,contLbl,placesLbl;
 
 - (void) animateTextView:(BOOL) up
 {
@@ -245,6 +245,7 @@
     appDelegate=[[UIApplication sharedApplication] delegate];
     pickerview.transform = CGAffineTransformMakeScale(1.0f, 0.75f);
     timedEventNamesArray=[[NSMutableArray alloc] initWithObjects:@"Team Roping",@"Calf Roping",@"Barrel Racing",@"Ribbon Roping",@"Steer Wrestling",@"Break Away Roping",@"Goat Tying",@"Pole Bending", nil];
+    
     scoredEventsNamesArray=[[NSMutableArray alloc] initWithObjects:@"Bull Riding",@"Saddle Bronc",@"Bareback", nil];
     
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
@@ -254,13 +255,63 @@
     imgview.image=[UIImage imageNamed:@"innerbg.png"];
     [self.view addSubview:imgview];
     
-    tblview.frame=CGRectMake(0, 0, width, height);
+    tblview.frame=CGRectMake(0,0, width, height);
     tblview.backgroundColor=[UIColor clearColor];
     tblview.separatorColor=[UIColor whiteColor];
     tblview.dataSource = self;
     tblview.delegate = self;
     [self.view addSubview:tblview];
     [self.view bringSubviewToFront:tblview];
+    CGFloat heightss = [UIScreen mainScreen].bounds.size.height;
+    if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone) {
+        
+    
+    if(heightss>=480 && heightss<568){
+        EVENTNAMELBL=[[UILabel alloc]initWithFrame:CGRectMake(10,10, 100,30)];
+        contLbl=[[UILabel alloc]initWithFrame:CGRectMake(width/2-50,10, 100,30)];
+        placesLbl=[[UILabel alloc]initWithFrame:CGRectMake(width/2+50,10, 100,30)];
+
+    }else if(heightss>=568 && heightss<600){
+        EVENTNAMELBL=[[UILabel alloc]initWithFrame:CGRectMake(20,10, 100,30)];
+        contLbl=[[UILabel alloc]initWithFrame:CGRectMake(width/2-20,10, 100,30)];
+        placesLbl=[[UILabel alloc]initWithFrame:CGRectMake(width/2+70,10, 100,30)];
+
+    }else{
+        EVENTNAMELBL=[[UILabel alloc]initWithFrame:CGRectMake(30,10, 100,30)];
+        contLbl=[[UILabel alloc]initWithFrame:CGRectMake(width/2-50,10, 100,30)];
+        placesLbl=[[UILabel alloc]initWithFrame:CGRectMake(width/2+50,10, 100,30)];
+
+    }
+        EVENTNAMELBL.font=[UIFont boldSystemFontOfSize:15.0];
+        contLbl.font=[UIFont boldSystemFontOfSize:15.0];
+        placesLbl.font=[UIFont boldSystemFontOfSize:15.0];
+
+
+    }else{
+        EVENTNAMELBL=[[UILabel alloc]initWithFrame:CGRectMake(60,10, 150,30)];
+        contLbl=[[UILabel alloc]initWithFrame:CGRectMake(width/2-20,10, 150,30)];
+        placesLbl=[[UILabel alloc]initWithFrame:CGRectMake(width/2+130,10, 150,30)];
+        EVENTNAMELBL.font=[UIFont boldSystemFontOfSize:25.0];
+        contLbl.font=[UIFont boldSystemFontOfSize:25.0];
+        placesLbl.font=[UIFont boldSystemFontOfSize:25.0];
+
+
+    }
+    EVENTNAMELBL.text=@"Event Name";
+    EVENTNAMELBL.textColor=[UIColor redColor];
+    [self.view addSubview:EVENTNAMELBL];
+    [self.view bringSubviewToFront:EVENTNAMELBL];
+    
+  
+    contLbl.text=@"Contestants";
+    contLbl.textColor=[UIColor redColor];
+    [self.view addSubview:contLbl];
+    [self.view bringSubviewToFront:contLbl];
+
+      placesLbl.text=@"Places";
+    placesLbl.textColor=[UIColor redColor];
+    [self.view addSubview:placesLbl];
+    [self.view bringSubviewToFront:placesLbl];
 
     pickerview.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"cellbg.png"]];
 
@@ -424,12 +475,14 @@
 }
 
 -(void)addEventToRodeo:(UIButton*)btn{
-    [self pickerValue];
     tag=btn.tag;
     currentTextField=(UITextField*)[self.view viewWithTag:tag-300];
     contestantTextField=(UITextField*)[self.view viewWithTag:tag-200];
     placesTextField=(UITextField*)[self.view viewWithTag:tag-100];
+    selectedEvent.eventname=currentTextField.text;
     
+    [self pickerValue];
+
     if(selectedEvent==nil)
     selectedEvent=[[EventVO alloc] init];
 

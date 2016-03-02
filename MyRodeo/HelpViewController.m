@@ -52,7 +52,7 @@
     imgview.image=[UIImage imageNamed:@"innerbg.png"];
     [self.view addSubview:imgview];
     helpTextView=[[UITextView alloc]init];
-    helpTextView.text=@"If you are experiencing problems with the function of the My Rodeo App.  First ensure that when entering data that you are hitting 'Done' at the conclusion of every entry.  Or if Creating a Rodeo that your hitting '+' at he end of every event entry. If you are experiencing difficulty with location while creating Rodeo shut off your device and restart it. If you are still experiencing difficulties please feel free to email us at help@myrodeoapp.com. To leave us feedback so we can better improve the app please also respond to help@myrodeoapp.com. To leave us feedback in the appstore please follow this link www.myrodeo.com";
+    helpTextView.text=@"If you are experiencing problems with the function of the My Rodeo App.  First ensure that when entering data that you are hitting 'Done' at the conclusion of every entry.  Or if Creating a Rodeo that your hitting '+' at the end of every event entry. If you are experiencing difficulty with location while creating Rodeo shut off your device and restart it. If you are still experiencing difficulties please feel free to email us at help@myrodeoapp.com. To leave us feedback so we can better improve the app please also respond to help@myrodeoapp.com. To leave us feedback in the appstore please follow this link www.myrodeo.com";
     helpTextView.frame=CGRectMake(10, 10, width-20, height-80);
     helpTextView.font=[UIFont fontWithName:@"Segoe Print" size:20];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObject:[UIFont fontWithName:@"Segoe Print" size:24] forKey:NSFontAttributeName];
