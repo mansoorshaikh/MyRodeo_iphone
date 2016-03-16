@@ -134,6 +134,14 @@
 		A43507941C48C397004E9EEA /* innerbg6.png in Resources */ = {isa = PBXBuildFile; fileRef = A43507931C48C397004E9EEA /* innerbg6.png */; };
 		A43507961C48C44E004E9EEA /* innerbg375.png in Resources */ = {isa = PBXBuildFile; fileRef = A43507951C48C44E004E9EEA /* innerbg375.png */; };
 		A43507981C48C4CE004E9EEA /* bg375.png in Resources */ = {isa = PBXBuildFile; fileRef = A43507971C48C4CE004E9EEA /* bg375.png */; };
+		A4A5B60A1C96912300ACE477 /* icon76*76.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A5B6061C96912300ACE477 /* icon76*76.png */; };
+		A4A5B60B1C96912300ACE477 /* icon76*76.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A5B6061C96912300ACE477 /* icon76*76.png */; };
+		A4A5B60C1C96912300ACE477 /* icon152*152.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A5B6071C96912300ACE477 /* icon152*152.png */; };
+		A4A5B60D1C96912300ACE477 /* icon152*152.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A5B6071C96912300ACE477 /* icon152*152.png */; };
+		A4A5B60E1C96912300ACE477 /* icon180*180.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A5B6081C96912300ACE477 /* icon180*180.png */; };
+		A4A5B60F1C96912300ACE477 /* icon180*180.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A5B6081C96912300ACE477 /* icon180*180.png */; };
+		A4A5B6101C96912300ACE477 /* icon1208120.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A5B6091C96912300ACE477 /* icon1208120.png */; };
+		A4A5B6111C96912300ACE477 /* icon1208120.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A5B6091C96912300ACE477 /* icon1208120.png */; };
 		A4A81C251C0D75CD00F30899 /* Segoe_UI_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A81C241C0D75CD00F30899 /* Segoe_UI_bold.ttf */; };
 		A4A81C261C0D75CD00F30899 /* Segoe_UI_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A81C241C0D75CD00F30899 /* Segoe_UI_bold.ttf */; };
 		A4B8A0E01C1E9D8E007E90A1 /* cell_shorimg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B8A0DF1C1E9D8E007E90A1 /* cell_shorimg.png */; };
@@ -290,6 +298,10 @@
 		A43507931C48C397004E9EEA /* innerbg6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innerbg6.png; path = images/innerbg6.png; sourceTree = "<group>"; };
 		A43507951C48C44E004E9EEA /* innerbg375.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innerbg375.png; path = images/innerbg375.png; sourceTree = "<group>"; };
 		A43507971C48C4CE004E9EEA /* bg375.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg375.png; path = images/bg375.png; sourceTree = "<group>"; };
+		A4A5B6061C96912300ACE477 /* icon76*76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon76*76.png"; path = "images/icon76*76.png"; sourceTree = "<group>"; };
+		A4A5B6071C96912300ACE477 /* icon152*152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon152*152.png"; path = "images/icon152*152.png"; sourceTree = "<group>"; };
+		A4A5B6081C96912300ACE477 /* icon180*180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon180*180.png"; path = "images/icon180*180.png"; sourceTree = "<group>"; };
+		A4A5B6091C96912300ACE477 /* icon1208120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon1208120.png; path = images/icon1208120.png; sourceTree = "<group>"; };
 		A4A81C241C0D75CD00F30899 /* Segoe_UI_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Segoe_UI_bold.ttf; path = font/Segoe_UI_bold.ttf; sourceTree = "<group>"; };
 		A4B8A0DF1C1E9D8E007E90A1 /* cell_shorimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell_shorimg.png; path = images/cell_shorimg.png; sourceTree = "<group>"; };
 		A4EA98451C0D7D1F00135D66 /* segoeprb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = segoeprb.ttf; path = font/segoeprb.ttf; sourceTree = "<group>"; };
@@ -341,6 +353,10 @@
 		4B2246E018633BB60084F8B9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A4A5B6061C96912300ACE477 /* icon76*76.png */,
+				A4A5B6071C96912300ACE477 /* icon152*152.png */,
+				A4A5B6081C96912300ACE477 /* icon180*180.png */,
+				A4A5B6091C96912300ACE477 /* icon1208120.png */,
 				A4EF8DB31C8567EB0054746C /* Mapimage.png */,
 				A43507971C48C4CE004E9EEA /* bg375.png */,
 				A43507951C48C44E004E9EEA /* innerbg375.png */,
@@ -663,6 +679,7 @@
 				A41F36071C478EF20029D1A6 /* Default-Landscape.png in Resources */,
 				4B2877D61887A79D002C832D /* Main_iPhone.storyboard in Resources */,
 				A43507961C48C44E004E9EEA /* innerbg375.png in Resources */,
+				A4A5B6101C96912300ACE477 /* icon1208120.png in Resources */,
 				4B2246E218633BD60084F8B9 /* bg.png in Resources */,
 				4B267B1218729B4F0004FCB4 /* EventsViewController_iPad.xib in Resources */,
 				4B1EB5C118741EEC00669350 /* location.png in Resources */,
@@ -675,6 +692,8 @@
 				4B23B9DD186C104B00719692 /* cellbg.png in Resources */,
 				A43507941C48C397004E9EEA /* innerbg6.png in Resources */,
 				4B5B30AF187EDE6F007815B3 /* MainNavigationController.xib in Resources */,
+				A4A5B60C1C96912300ACE477 /* icon152*152.png in Resources */,
+				A4A5B60E1C96912300ACE477 /* icon180*180.png in Resources */,
 				4B1DEE7F18693C6300E84AA7 /* navbar.png in Resources */,
 				A4A81C251C0D75CD00F30899 /* Segoe_UI_bold.ttf in Resources */,
 				4B1EB5C31874606B00669350 /* PickLocationViewController_iPad.xib in Resources */,
@@ -706,6 +725,7 @@
 				4B30421E1862B02900154BE3 /* Images.xcassets in Resources */,
 				4B267B101872980E0004FCB4 /* CreateRodeoViewController_iPad.xib in Resources */,
 				4B8030F218854F40002705F8 /* cellcontentsbg.png in Resources */,
+				A4A5B60A1C96912300ACE477 /* icon76*76.png in Resources */,
 				A4EF8DB41C8567EB0054746C /* Mapimage.png in Resources */,
 				4B70BA11187AEABB00F3A820 /* lookuparodeo.png in Resources */,
 				4B31B7211871567400EAB0CA /* HomeViewController_iPad.xib in Resources */,
@@ -740,6 +760,8 @@
 				A41F36121C478EF20029D1A6 /* Default~Landscape@2x.png in Resources */,
 				A4A81C261C0D75CD00F30899 /* Segoe_UI_bold.ttf in Resources */,
 				A41F36081C478EF20029D1A6 /* Default-Landscape.png in Resources */,
+				A4A5B60F1C96912300ACE477 /* icon180*180.png in Resources */,
+				A4A5B60D1C96912300ACE477 /* icon152*152.png in Resources */,
 				A4EA98471C0D7D1F00135D66 /* segoeprb.ttf in Resources */,
 				A41F36161C478EF20029D1A6 /* Default1536x2048@2x.png in Resources */,
 				4B1336161ADBAF690012E0F2 /* Rodeo.sqlite in Resources */,
@@ -748,12 +770,14 @@
 				A41F360E1C478EF20029D1A6 /* Default.png in Resources */,
 				A41F360C1C478EF20029D1A6 /* Default-Landscape@3x.png in Resources */,
 				A41F36041C478EF20029D1A6 /* Default-667h@2x.png in Resources */,
+				A4A5B60B1C96912300ACE477 /* icon76*76.png in Resources */,
 				A41F36181C478EF20029D1A6 /* Defaults-1136h@2x.png in Resources */,
 				A41F36021C478EF20029D1A6 /* Default-568h@2x.png in Resources */,
 				A41F36101C478EF20029D1A6 /* Default~iphone.png in Resources */,
 				4B1336241ADBB05E0012E0F2 /* HelpViewController.xib in Resources */,
 				A41F360A1C478EF20029D1A6 /* Default-Landscape@2x.png in Resources */,
 				A41F36141C478EF20029D1A6 /* Default768x1024.png in Resources */,
+				A4A5B6111C96912300ACE477 /* icon1208120.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,8 +872,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Joel Dunlap (AET37429U4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joel Dunlap (AET37429U4)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -865,9 +889,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "f8add251-accf-4cd2-a53e-8856e9383b08";
+				PROVISIONING_PROFILE = "6b47a9c8-aef8-4986-80ea-37153f7837eb";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s";
@@ -894,8 +918,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Joel Dunlap (AET37429U4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joel Dunlap (AET37429U4)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -905,9 +929,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "f8add251-accf-4cd2-a53e-8856e9383b08";
+				PROVISIONING_PROFILE = "6b47a9c8-aef8-4986-80ea-37153f7837eb";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -918,24 +942,21 @@
 		4B3042351862B02900154BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Joel Dunlap (AET37429U4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joel Dunlap (AET37429U4)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyRodeo/MyRodeo-Prefix.pch";
 				INFOPLIST_FILE = "MyRodeo/MyRodeo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobiwebcode.pgfh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiwebcode.myrodeo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f8add251-accf-4cd2-a53e-8856e9383b08";
+				PROVISIONING_PROFILE = "6b47a9c8-aef8-4986-80ea-37153f7837eb";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -943,24 +964,21 @@
 		4B3042361862B02900154BE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Joel Dunlap (AET37429U4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joel Dunlap (AET37429U4)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyRodeo/MyRodeo-Prefix.pch";
 				INFOPLIST_FILE = "MyRodeo/MyRodeo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobiwebcode.pgfh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiwebcode.myrodeo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f8add251-accf-4cd2-a53e-8856e9383b08";
+				PROVISIONING_PROFILE = "6b47a9c8-aef8-4986-80ea-37153f7837eb";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -973,8 +991,8 @@
 					armv7s,
 				);
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyRodeo.app/MyRodeo";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Joel Dunlap (AET37429U4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joel Dunlap (AET37429U4)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -988,7 +1006,7 @@
 				);
 				INFOPLIST_FILE = "MyRodeoTests/MyRodeoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f8add251-accf-4cd2-a53e-8856e9383b08";
+				PROVISIONING_PROFILE = "6b47a9c8-aef8-4986-80ea-37153f7837eb";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = xctest;
@@ -1003,8 +1021,8 @@
 					armv7s,
 				);
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyRodeo.app/MyRodeo";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Khor Chin Kiew (FZ829W37EB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Joel Dunlap (AET37429U4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joel Dunlap (AET37429U4)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1014,7 +1032,7 @@
 				GCC_PREFIX_HEADER = "MyRodeo/MyRodeo-Prefix.pch";
 				INFOPLIST_FILE = "MyRodeoTests/MyRodeoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f8add251-accf-4cd2-a53e-8856e9383b08";
+				PROVISIONING_PROFILE = "6b47a9c8-aef8-4986-80ea-37153f7837eb";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = xctest;

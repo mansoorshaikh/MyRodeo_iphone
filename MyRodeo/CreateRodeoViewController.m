@@ -109,6 +109,9 @@
 
 - (void) threadStartAnimating:(id)data {
     [activityIndicator startAnimating];
+    activityIndicator.center = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
+    [self.view addSubview: activityIndicator];
+
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -425,7 +428,11 @@
     noofroundsTextFields.layer.borderColor=[[UIColor blackColor]CGColor];
     noofplacesTextField.layer.borderColor=[[UIColor blackColor]CGColor];
     rodeodateTextField.layer.borderColor=[[UIColor blackColor]CGColor];
-    locationTextField1=[[UITextField alloc]initWithFrame:CGRectMake(30,110,220,40)];
+    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
+        locationTextField1=[[UITextField alloc]initWithFrame:CGRectMake(30,110,220,40)];
+    }else{
+        locationTextField1=[[UITextField alloc]initWithFrame:CGRectMake(134,212,423,80)];
+    }
     locationTextField1.layer.borderColor=[[UIColor blackColor]CGColor];
     locationTextField1.layer.borderWidth = 0.5f;
 

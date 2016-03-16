@@ -507,13 +507,12 @@
         selectedEvent.contestants=contestantTextField.text;
         selectedEvent.places=placesTextField.text;
         selectedEvent.serverdownload=[NSString stringWithFormat:@"%d",currentTextField.tag-100];
-        if([selectedEvent.eventType isEqualToString:@""] || selectedEvent.eventType==nil){
             if([timedEventNamesArray containsObject:selectedEvent.eventname]){
                 selectedEvent.eventType=@"timed";
             }else if([scoredEventsNamesArray containsObject:selectedEvent.eventname]){
                 selectedEvent.eventType=@"scored";
             }
-        }
+        
         [eventSelectedPickerArray replaceObjectAtIndex:currentTextField.tag-100 withObject:selectedEvent];
     }else if(otherSelected==YES){
         otherSelected=NO;
@@ -587,6 +586,7 @@
             [self.view bringSubviewToFront:pickerview];
             [self.view addSubview:toolbar];
             [self.view bringSubviewToFront:toolbar];
+            pickerview.delegate = self;
 
         }else if(textField.tag>=200 && textField.tag<299){
             movementCount=textField.tag-200;
@@ -607,8 +607,7 @@
             pickerview.hidden=YES;
             toolbar.hidden=YES;
         }
-     pickerview.delegate = self;
-    uint selectedRow = [pickerview selectedRowInComponent:0];
+   // uint selectedRow = [pickerview selectedRowInComponent:0];
    self.currentTextField.inputView = pickerview;
     
         movementDistance=(movementCount/4)*50;

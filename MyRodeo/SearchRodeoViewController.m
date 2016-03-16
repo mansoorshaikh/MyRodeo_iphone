@@ -134,6 +134,8 @@
 
 - (void) threadStartAnimating:(id)data {
     [activityIndicator startAnimating];
+    activityIndicator.center = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
+    [self.view addSubview: activityIndicator];
 }
 
 - (void)didReceiveMemoryWarning

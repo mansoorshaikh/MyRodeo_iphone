@@ -418,14 +418,21 @@
 - (void) threadStartAnimating:(id)data {
     if(isLandscape){
       [activityIndicator_landscape startAnimating];
+        activityIndicator_landscape.center = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
+        [self.view addSubview: activityIndicator_landscape];
+
     }else{
       [activityIndicator startAnimating];
+        activityIndicator.center = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
+        [self.view addSubview: activityIndicator];
+
     }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     currentTextFieldTag=-1;
     contestantSaved=FALSE;
     self.tblview.delegate = self;
@@ -677,6 +684,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+
     isLandscape=NO;
     appDelegate.isLandscapeOK=YES;
 }
